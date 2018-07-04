@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-public class information {
+public class Information {
     int ID;
     String name;
     String company;

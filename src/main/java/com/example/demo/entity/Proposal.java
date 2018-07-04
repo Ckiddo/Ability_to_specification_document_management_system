@@ -2,7 +2,7 @@ package com.example.demo.entity;
 
 import java.util.List;
 
-public class proposal {
+public class Proposal {
 
     int P_ID;
     String name;
@@ -12,5 +12,5 @@ public class proposal {
     String content;
     int agree_num;
     int disagree_num;
-    List<comment> commontList;
+    List<Comment> commontList;
 }

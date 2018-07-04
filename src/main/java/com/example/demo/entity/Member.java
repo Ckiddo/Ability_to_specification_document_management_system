@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-public class member {
+public class Member {
     String name;
     String sex;
     java.util.Date birthdate;

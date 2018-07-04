@@ -1,8 +1,8 @@
 package com.example.demo.service;
-import com.example.demo.entity.RegistInformation;
+import com.example.demo.entity.information;
 
 import java.util.List;
 
 public interface RegistInformationService {
-    void setRegistInformation(RegistInformation regInf);
+    void setRegistInformation(information regInf);
 }
