@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <component name="libraryTable">
   <library name="Maven: org.projectlombok:lombok:1.16.22">
     <CLASSES>
@@ -11,3 +12,19 @@
     </SOURCES>
   </library>
 </component>
+||||||| merged common ancestors
+=======
+<component name="libraryTable">
+  <library name="Maven: org.projectlombok:lombok:1.16.22">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
+>>>>>>> b60f52d81d9759975891ca9d787a5bbdf1a266bc

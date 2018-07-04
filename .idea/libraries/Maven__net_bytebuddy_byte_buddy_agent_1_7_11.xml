@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <component name="libraryTable">
   <library name="Maven: net.bytebuddy:byte-buddy-agent:1.7.11">
     <CLASSES>
@@ -11,3 +12,19 @@
     </SOURCES>
   </library>
 </component>
+||||||| merged common ancestors
+=======
+<component name="libraryTable">
+  <library name="Maven: net.bytebuddy:byte-buddy-agent:1.7.11">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy-agent/1.7.11/byte-buddy-agent-1.7.11.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy-agent/1.7.11/byte-buddy-agent-1.7.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy-agent/1.7.11/byte-buddy-agent-1.7.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
+>>>>>>> b60f52d81d9759975891ca9d787a5bbdf1a266bc

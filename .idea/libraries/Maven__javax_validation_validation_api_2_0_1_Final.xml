@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <component name="libraryTable">
   <library name="Maven: javax.validation:validation-api:2.0.1.Final">
     <CLASSES>
@@ -11,3 +12,19 @@
     </SOURCES>
   </library>
 </component>
+||||||| merged common ancestors
+=======
+<component name="libraryTable">
+  <library name="Maven: javax.validation:validation-api:2.0.1.Final">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
+>>>>>>> b60f52d81d9759975891ca9d787a5bbdf1a266bc
