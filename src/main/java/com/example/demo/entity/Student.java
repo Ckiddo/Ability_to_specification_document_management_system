@@ -14,5 +14,4 @@ public class Student {
     private String no;
     private String name;
     private Double score;
-
 }
