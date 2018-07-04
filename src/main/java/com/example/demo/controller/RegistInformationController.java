@@ -10,26 +10,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-/**
-* @description 
-* @author Tim Lin
-* @create 2018-07-01 
-**/
 @Controller
-public class StudentController {
-
+public class RegistInformationController {
     @Autowired
     private StudentService studentService;
 
-    @RequestMapping(value = "/stu/getAllStudent",method = RequestMethod.GET)
+    @RequestMapping(value = "",method = RequestMethod.GET)
     public String getAllStudent(HttpServletRequest request){
         List<Student> list = studentService.getAllStudent();
         request.setAttribute("students",list);
         return "student";
     }
 
-
-
 }
-
-

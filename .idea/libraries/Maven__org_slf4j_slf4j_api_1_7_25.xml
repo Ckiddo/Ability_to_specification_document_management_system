@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-<component name="libraryTable">
-  <library name="Maven: org.slf4j:slf4j-api:1.7.25">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/" />
-    </CLASSES>
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-javadoc.jar!/" />
-    </JAVADOC>
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar!/" />
-    </SOURCES>
-  </library>
-</component>
-||||||| merged common ancestors
-=======
 <component name="libraryTable">
   <library name="Maven: org.slf4j:slf4j-api:1.7.25">
     <CLASSES>
@@ -27,4 +11,3 @@
     </SOURCES>
   </library>
 </component>
->>>>>>> b60f52d81d9759975891ca9d787a5bbdf1a266bc

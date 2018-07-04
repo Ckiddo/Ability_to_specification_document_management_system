@@ -4,11 +4,7 @@ import com.example.demo.entity.Student;
 
 import java.util.List;
 
-/**
-* @description 
-* @author Tim Lin
-* @create 2018-07-01 
-**/
+
 
 public interface StudentService {
 
