@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>提案查询</title>
+</head>
+<style>	
+
+* {
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	.root-container{
+		border:1px solid rgb(202,228,202);
+		width:1000px;
+		height:auto;
+		margin-top:100px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.container{
+		border:1px solid rgb(202,228,202);
+		width:900px;
+		height:auto;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.small-container{
+		border:1px solid rgb(202,228,202);
+		width:800px;
+		height:auto;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:50px;<!---->
+	}
+	
+	.big-header {
+		text-align:center;
+		background-color:rgb(202,228,202);
+		font-size:2em;
+	}
+	.small-header {
+		text-align:left;
+		background-color:rgb(202,228,202);
+	}
+	
+	.login-control{
+		text-align:right;
+		background-color:rgb(202,228,202);
+		
+	}
+	.func-choose-button{
+		display:inline;
+		width:49.6%;
+		font-size:1.5em;
+		padding:0.2em;
+		background-color:white;
+	}
+	
+	.button{
+		background-color:rgb(25,155,213);
+		color:white;
+		border:0px;
+		border-radius:2px;
+		padding:2px 4px 2px 4px;
+		
+	}
+	
+	.article-container{
+		width:600px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.tiny-container{
+		width:600px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+</style>
+<body>
+<div class="root-container">
+	<header class="big-header">能力规范文稿管理系统</header>
+	<div class="login-control">
+	admin已登录<button class="button">注销</button>
+	</div>
+	<div class="func-choose-container">
+			<button class="func-choose-button" >写者</button>
+			<button class="func-choose-button" >管理</button>
+	<div class="container">
+		<div class="small-container">
+				<header class="small-header">提案详情</header>
+				<!--下面为动态更新内容，提案详情-->
+				<br/>
+				<table>
+				<tr>
+					<td>提案id</td><td>id</td>
+					<td>提案名称</td><td>name</td>
+				</tr>
+				<tr>
+					<td>提案作者</td><td>author</td>
+					<td>截止日期</td><td>date</td>
+				</tr>
+				<tr>
+					<td>提案内容</td>
+				</tr>
+				</table>
+				<div class="article-container">
+				jidwhwiefhwoifhwifhwioefhiwoefhiwfhowe<br>
+				dhwdhwdjwhdjwdhwjdbjwdjwdhjwdhjwhdjwhdjwhd<br>
+				</div>
+				<br/>
+				<div class="tiny-container">
+					<form>
+						<input type="text">
+						<input type="radio">附议
+						<input type="radio">反对
+						<button class="button">提交</button>
+				</div>
+				<br/>
+				<div class="tiny-container">
+					<p>评论区</p>
+					<table style="border:10x solid black">
+						<tr>
+							<th>评论人</th>
+							<th>评论内容</th>
+							<th>时间</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+						</tr>
+					</table>
+				</div>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+</html>
