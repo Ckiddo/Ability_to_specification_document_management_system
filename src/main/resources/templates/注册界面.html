@@ -1,67 +1,75 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>入会申请</title>
+	<meta charset="utf-8">
+	<title>入会申请</title>
+	<style>
+		* {
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.root-container{
+			border:1px solid rgb(202,228,202);
+			width:1000px;
+			height:auto;
+			margin-top:100px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		.container{
+			border:1px solid rgb(202,228,202);
+			width:900px;
+			height:auto;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		.small-container{
+			border:1px solid rgb(202,228,202);
+			width:800px;
+			height:auto;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		.mark {
+			color:red;
+			display:inline;
+		}
+
+		.big-header {
+			text-align:center;
+			background-color:rgb(202,228,202);
+			font-size:2em;
+		}
+
+		.small-header {
+			text-align:left;
+			background-color:rgb(202,228,202);
+		}
+
+		.note{
+			display:block;
+			float:left;
+			margin-left:20px;
+		}
+
+		.text-input {
+			width:200px;
+		}
+	</style>
 </head>
-<style>	
-	* {
-		margin: 0;
-		box-sizing: border-box;
-	}
-	
-	.root-container{
-		border:1px solid rgb(202,228,202);
-		width:1000px;
-		height:auto;
-		margin-top:100px;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	
-	.container{
-		border:1px solid rgb(202,228,202);
-		width:900px;
-		height:auto;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	
-	.small-container{
-		border:1px solid rgb(202,228,202);
-		width:800px;
-		height:auto;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	
-	.mark {
-		color:red;
-		display:inline;
-	}
-	.small-header {
-		text-align:left;
-		background-color:rgb(202,228,202);
-	}
-	
-	.note{
-		display:block;
-		float:left;
-		margin-left:20px;
-	}
-	
-	.text-input {
-		width:200px;
-	}
-</style>
+
 <body>
-	<div class="root-container">
-		<div class="container main-container">
-			<header class="small-header">能力规范管理系统</header>
-			<br>
-			<div class="container register-container">
-				<header class="small-header">入会申请</header>
-				<div>
+<div class="root-container">
+	<div class="container main-container">
+		<header class="big-header">能力规范管理系统</header>
+		<br>
+		<div class="container register-container">
+			<header class="small-header">入会申请</header>
+			<div>
 				<form class="container" align="center">
 					<p class="note">姓名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><input type="text" class="text-input" required><p class="mark">*</p><br>
 					<p class="note">性别&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><input type="text" class="text-input" required><p class="mark">*</p><br>
@@ -70,30 +78,31 @@
 					<p class="note">联系方式</p><input type="text" class="text-input" required><p class="mark">*</p><br>
 					<p class="note">推荐人&nbsp;&nbsp;&nbsp;</p><input type="text" class="text-input" required>&nbsp;<br>
 					<p class="note">行业分会</p>
-						<select name="cars" style="width:200px">
-							<option value="volvo">华北分会</option>
-							<option value="saab">华中分会</option>
-							<option value="fiat">华东分会</option>
-							<option value="audi">华南分会</option>
-						</select><p class="mark">*</p><br>
+					<select name="cars" style="width:200px">
+						<option value="volvo">华北分会</option>
+						<option value="saab">华中分会</option>
+						<option value="fiat">华东分会</option>
+						<option value="audi">华南分会</option>
+					</select><p class="mark">*</p><br>
 					<p class="note">专委会&nbsp;&nbsp;&nbsp;</p>
-						<select name="cars" style="width:200px">
-							<option value="volvo">专家组</option>
-							<option value="saab">精英组</option>
-							<option value="fiat">普通组</option>
-							<option value="audi">小白组</option>
-						</select><p class="mark">*</p><br>
-	
+					<select name="cars" style="width:200px">
+						<option value="volvo">专家组</option>
+						<option value="saab">精英组</option>
+						<option value="fiat">普通组</option>
+						<option value="audi">小白组</option>
+					</select><p class="mark">*</p><br>
+
 					<br>
 					<br>
 					<div class="button-container" >
-						<input class="control-button" type="submit" value="提交" style="margin-right:40px;">
+						<input class="control-button" type="submit" value="提交" style="margin-right:40px;"/>
 						<button class="control-button" style="margin-right:40px;">取消</button>
 						<button class="control-button" >清除</button>
-					<div>
+					</div>
 				</form>
-				</div>
+			</div>
 		</div>
 	</div>
+</div>
 </body>
 </html>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <component name="libraryTable">
   <library name="Maven: org.springframework:spring-test:5.0.7.RELEASE">
     <CLASSES>
@@ -12,19 +11,3 @@
     </SOURCES>
   </library>
 </component>
-||||||| merged common ancestors
-=======
-<component name="libraryTable">
-  <library name="Maven: org.springframework:spring-test:5.0.7.RELEASE">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.7.RELEASE/spring-test-5.0.7.RELEASE.jar!/" />
-    </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.7.RELEASE/spring-test-5.0.7.RELEASE-javadoc.jar!/" />
-    </JAVADOC>
-    <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.7.RELEASE/spring-test-5.0.7.RELEASE-sources.jar!/" />
-    </SOURCES>
-  </library>
-</component>
->>>>>>> b60f52d81d9759975891ca9d787a5bbdf1a266bc

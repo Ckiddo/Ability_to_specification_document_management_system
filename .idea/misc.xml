@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="MavenProjectsManager">
@@ -12,27 +11,3 @@
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
-||||||| merged common ancestors
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-<<<<<<< HEAD
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
-=======
->>>>>>> 6eb8851a79f3b62be9bfb15ce0cd17e43aabd8f9
-  <component name="MavenProjectsManager">
-    <option name="originalFiles">
-      <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-      </list>
-    </option>
-  </component>
-<<<<<<< HEAD
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-=======
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" project-jdk-name="9.0" project-jdk-type="JavaSDK">
->>>>>>> 6eb8851a79f3b62be9bfb15ce0cd17e43aabd8f9
-    <output url="file://$PROJECT_DIR$/out" />
-  </component>
-</project>
->>>>>>> b60f52d81d9759975891ca9d787a5bbdf1a266bc

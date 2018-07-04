@@ -27,7 +27,8 @@ public class StudentController {
         request.setAttribute("students",list);
         return "student";
     }
-
-
-
+    @RequestMapping("/register")
+    public String  register(){
+        return "注册界面.html";
+    }
 }
