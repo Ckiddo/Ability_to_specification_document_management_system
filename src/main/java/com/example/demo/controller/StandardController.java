@@ -16,9 +16,10 @@ public class StandardController {
     @Autowired
     private StandardService standardService;
 
-    @RequestMapping(value = "/sta/getAllStandard",method = RequestMethod.GET);
+    @RequestMapping(value = "/stu/getAllStandards",method = RequestMethod.GET)
     public String getAllStandard(HttpServletRequest request){
         List<Standard> list = standardService.getAllStandard();
-        request.setAttribute("");
+        request.setAttribute("standard",list);
+        return "登录后界面-提案展示主界面.html";
     }
 }
