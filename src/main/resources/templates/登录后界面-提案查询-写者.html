@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="styles.css">
-<title>提案编制</title>
+<title>提案查询-写者</title>
 </head>
 <style>	
 
@@ -20,7 +20,16 @@
 		padding:0.2em;
 		background-color:white;
 	}
-
+	
+	.button{
+		background-color:rgb(25,155,213);
+		color:white;
+		border:0px;
+		border-radius:2px;
+		padding:2px 4px 2px 4px;
+		
+	}
+	
 	th,td {
 		border:1px solid black;
 		width:100%;
@@ -37,35 +46,26 @@
 	admin已登录<button class="button">注销</button>
 	</div>
 	<div class="func-choose-container">
-		<a href="登录后界面-提案查询-管理.html">
+		<a href="登录后界面-提案查询-写者.html">
 			<button class="func-choose-button" >写者</button>
 		</a>
-			<button class="func-choose-button" >管理</button>
+		<a href="登录后界面-信息维护.html" >
+			<button class="func-choose-button" disabled="disabled" style="cursor:not-allowed;background-color:lightgray">管理</button>
+		</a>
 	<div class="container">
 		<div class="small-container">
-				<header class="small-header">提案编制</header>
-				<div style="width:50%;margin-left:auto;margin-right:auto">
-					<br>
-					提案名称<input type="text">
-					<br/>
-					<p>提案内容</p>
-					<textarea rows="10" cols="60"></textarea>
-					<br/>
-					<input type="radio">我已阅读<p style="color:red;display:inline">提案建议要求</p>
-					<button class="button">打印</button>
-					<button class="button">保存</button>
-					<button class="button">提交</button>
-				</div>
 				<header class="small-header">提案列表</header>
 				<!--下面为动态更新内容，提案列表-->
-				<table style="width:50%;margin-left:auto;margin-right:auto">
+				<table>
 					<tr>
 						<th><input type="checkbox" style="float:	left">全选</th>
-						<th>提案ID</th>
+						<th>编号</th>
 						<th>提案名称</th>
-						<th>提交时间</th>
-						<th>提交状态</th>
-						
+						<th>作者</th>
+						<th>截止日期</th>
+						<th>状态</th>
+						<th>附议数</th>
+						<th>反对数</th>
 					</tr>
 					<tr>
 						<td><input type="checkbox">1</td>
@@ -73,7 +73,9 @@
 						<td>1</td>
 						<td>2</td>
 						<td>1</td>
-					
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox">1</td>
@@ -81,7 +83,9 @@
 						<td>1</td>
 						<td>2</td>
 						<td>1</td>
-					
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
 					</tr>
 				</table>
 				<br/>
