@@ -28,6 +28,7 @@ public class StudentController {
         return "student";
     }
 
-
+    @RequestMapping(value = "/index",method = RequestMethod.GET)
+    
 
 }
