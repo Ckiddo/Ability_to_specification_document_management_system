@@ -2234,3 +2234,70 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template "stude
 2018-07-01 21:28:32.656  INFO 28535 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
 2018-07-01 21:28:32.657  INFO 28535 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2018-07-01 21:28:32.663  INFO 28535 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-07-04 22:45:01.852  INFO 37245 --- [main] com.example.demo.SampleApplication       : Starting SampleApplication on chenkangdeMacBook.local with PID 37245 (/Users/chenkang/Documents/GitHub/Ability_to_specification_document_management_system/target/classes started by chenkang in /Users/chenkang/Documents/GitHub/Ability_to_specification_document_management_system)
+2018-07-04 22:45:01.867  INFO 37245 --- [main] com.example.demo.SampleApplication       : No active profile set, falling back to default profiles: default
+2018-07-04 22:45:02.150  INFO 37245 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b6faea6: startup date [Wed Jul 04 22:45:02 CST 2018]; root of context hierarchy
+2018-07-04 22:45:06.095  INFO 37245 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-07-04 22:45:06.178  INFO 37245 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-04 22:45:06.180  INFO 37245 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-04 22:45:06.222  INFO 37245 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/chenkang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-07-04 22:45:06.549  INFO 37245 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-04 22:45:06.550  INFO 37245 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4400 ms
+2018-07-04 22:45:07.024  INFO 37245 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-04 22:45:07.039  INFO 37245 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-04 22:45:07.040  INFO 37245 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-04 22:45:07.041  INFO 37245 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-04 22:45:07.044  INFO 37245 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-04 22:45:07.968  INFO 37245 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-04 22:45:08.595  INFO 37245 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b6faea6: startup date [Wed Jul 04 22:45:02 CST 2018]; root of context hierarchy
+2018-07-04 22:45:08.716  INFO 37245 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/getAllStudent],methods=[GET]}" onto public java.lang.String com.example.demo.controller.StudentController.getAllStudent(javax.servlet.http.HttpServletRequest)
+2018-07-04 22:45:08.724  INFO 37245 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-04 22:45:08.725  INFO 37245 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-04 22:45:08.767  INFO 37245 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-04 22:45:08.768  INFO 37245 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-04 22:45:08.996  WARN 37245 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-07-04 22:45:09.513  INFO 37245 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-04 22:45:09.515  INFO 37245 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-04 22:45:09.526  INFO 37245 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-04 22:45:09.624  INFO 37245 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-04 22:45:09.633  INFO 37245 --- [main] com.example.demo.SampleApplication       : Started SampleApplication in 9.339 seconds (JVM running for 10.956)
+2018-07-04 22:45:23.517  INFO 37245 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b6faea6: startup date [Wed Jul 04 22:45:02 CST 2018]; root of context hierarchy
+2018-07-04 22:45:23.520  INFO 37245 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-04 22:45:23.521  INFO 37245 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-04 22:48:09.654  INFO 37349 --- [main] com.example.demo.SampleApplication       : Starting SampleApplication on chenkangdeMacBook.local with PID 37349 (/Users/chenkang/Documents/GitHub/Ability_to_specification_document_management_system/target/classes started by chenkang in /Users/chenkang/Documents/GitHub/Ability_to_specification_document_management_system)
+2018-07-04 22:48:09.659  INFO 37349 --- [main] com.example.demo.SampleApplication       : No active profile set, falling back to default profiles: default
+2018-07-04 22:48:09.809  INFO 37349 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b6faea6: startup date [Wed Jul 04 22:48:09 CST 2018]; root of context hierarchy
+2018-07-04 22:48:13.022  INFO 37349 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-07-04 22:48:13.076  INFO 37349 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-04 22:48:13.077  INFO 37349 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-04 22:48:13.097  INFO 37349 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/chenkang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-07-04 22:48:13.318  INFO 37349 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-04 22:48:13.319  INFO 37349 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3511 ms
+2018-07-04 22:48:13.744  INFO 37349 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-04 22:48:13.768  INFO 37349 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-04 22:48:13.769  INFO 37349 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-04 22:48:13.770  INFO 37349 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-04 22:48:13.770  INFO 37349 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-04 22:48:14.371  INFO 37349 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-04 22:48:14.757  INFO 37349 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b6faea6: startup date [Wed Jul 04 22:48:09 CST 2018]; root of context hierarchy
+2018-07-04 22:48:15.194  INFO 37349 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stu/getAllStudent],methods=[GET]}" onto public java.lang.String com.example.demo.controller.StudentController.getAllStudent(javax.servlet.http.HttpServletRequest)
+2018-07-04 22:48:15.203  INFO 37349 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-04 22:48:15.207  INFO 37349 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-04 22:48:15.334  INFO 37349 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-04 22:48:15.334  INFO 37349 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-04 22:48:15.607  WARN 37349 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-07-04 22:48:16.329  INFO 37349 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-04 22:48:16.333  INFO 37349 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-04 22:48:16.344  INFO 37349 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-04 22:48:16.466  INFO 37349 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-04 22:48:16.477  INFO 37349 --- [main] com.example.demo.SampleApplication       : Started SampleApplication in 8.118 seconds (JVM running for 9.361)
+2018-07-04 22:48:31.335  INFO 37349 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-04 22:48:31.336  INFO 37349 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-04 22:48:31.380  INFO 37349 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2018-07-04 22:48:42.968  INFO 37349 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-07-04 22:48:43.266  INFO 37349 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-07-04 22:48:49.663  INFO 37349 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b6faea6: startup date [Wed Jul 04 22:48:09 CST 2018]; root of context hierarchy
+2018-07-04 22:48:49.666  INFO 37349 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-04 22:48:49.667  INFO 37349 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-04 22:48:49.670  INFO 37349 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-07-04 22:48:49.678  INFO 37349 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
