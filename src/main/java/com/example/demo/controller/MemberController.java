@@ -23,14 +23,14 @@ public class MemberController {
     @Autowired
     private MemberService memberService;
 
-
+/*
     @RequestMapping(value = "/注册界面.html",method = RequestMethod.GET)
     public String insert(@ModelAttribute("member") Member member,Model model){
         System.out.println("hei");
         memberService.insert(member);
         return "redirect:/主界面.html";
     }
-
+*/
     //更新信息
     /*
     @RequestMapping(value = "/stu/update",method = RequestMethod.GET)
