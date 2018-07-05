@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -20,6 +21,8 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
 =======
 >>>>>>> 6eb8851a79f3b62be9bfb15ce0cd17e43aabd8f9
+=======
+>>>>>>> ck
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -27,6 +30,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
 =======
@@ -36,3 +40,7 @@
   </component>
 </project>
 >>>>>>> b60f52d81d9759975891ca9d787a5bbdf1a266bc
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>
+>>>>>>> ck

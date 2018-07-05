@@ -10,6 +10,10 @@ import java.util.List;
 @Mapper
 public interface StandardDAO {
 
+<<<<<<< HEAD
     @Select(value = "SELECT * FROM standard")
+=======
+    @Select(value = "SELECT * FROM standards")
+>>>>>>> ck
     List<Standard> getAllStandard();
 }
