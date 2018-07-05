@@ -17,4 +17,5 @@ public interface StudentDAO {
     @Select(value = "SELECT * FROM student")
     List<Student> getAllStudent();
 
+
 }

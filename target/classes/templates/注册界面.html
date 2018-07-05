@@ -2,63 +2,25 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
 <title>入会申请</title>
 <style>
-* {
-margin: 0;
-box-sizing: border-box;
-}
+	.note{
+	display:block;
+	float:left;
+	margin-left:20px;
+	}
 
-.root-container{
-border:1px solid rgb(202,228,202);
-width:1000px;
-height:auto;
-margin-top:100px;
-margin-left:auto;
-margin-right:auto;
-}
-
-.container{
-border:1px solid rgb(202,228,202);
-width:900px;
-height:auto;
-margin-left:auto;
-margin-right:auto;
-}
-
-.small-container{
-border:1px solid rgb(202,228,202);
-width:800px;
-height:auto;
-margin-left:auto;
-margin-right:auto;
-}
-
-.mark {
-color:red;
-display:inline;
-}
-.small-header {
-text-align:left;
-background-color:rgb(202,228,202);
-}
-
-.note{
-display:block;
-float:left;
-margin-left:20px;
-}
-
-.text-input {
-width:200px;
-}
+	.text-input {
+	width:200px;
+	}
 </style>
 </head>
 
 <body>
 	<div class="root-container">
 		<div class="container main-container">
-			<header class="small-header">能力规范管理系统</header>
+			<header class="big-header">能力规范管理系统</header>
 			<br>
 			<div class="container register-container">
 				<header class="small-header">入会申请</header>
@@ -88,9 +50,9 @@ width:200px;
 					<br>
 					<br>
 					<div class="button-container" >
-						<input class="control-button" type="submit" value="提交" style="margin-right:40px;"/>
-						<button class="control-button" style="margin-right:40px;">取消</button>
-						<button class="control-button" >清除</button>
+						<input class="button" type="submit" value="提交" style="margin-right:40px;"/>
+						<a  href="主界面.html" class="button" style=" display:inline-block;text-decoration:none;margin-right:40px;">取消</a>
+						<input type="reset" value="清除" class="button">
 					</div>
 				</form>
 				</div>
