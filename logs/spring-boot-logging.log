@@ -1803,3 +1803,14 @@ org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method cal
 2018-07-05 12:49:36.834  WARN 40754 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s584ms), soft-evicting connections from pool.
 2018-07-05 13:21:12.353  WARN 40754 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s293ms).
 2018-07-05 13:25:45.655  WARN 40754 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m3s302ms).
+2018-07-05 17:51:15.175  WARN 40754 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m27s548ms).
+2018-07-05 17:57:10.535  WARN 40754 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m25s344ms).
+2018-07-05 18:04:10.103  WARN 40754 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m29s548ms).
+2018-07-05 18:10:05.683  WARN 40754 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m25s570ms).
+2018-07-05 18:25:32.317  WARN 40754 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m56s619ms).
+2018-07-05 18:26:02.038  WARN 40754 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s722ms), soft-evicting connections from pool.
+2018-07-05 21:36:00.823  INFO 40754 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b6faea6: startup date [Thu Jul 05 09:45:10 CST 2018]; root of context hierarchy
+2018-07-05 21:36:00.866  INFO 40754 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-05 21:36:00.868  INFO 40754 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-05 21:36:00.878  INFO 40754 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-07-05 21:36:00.888  INFO 40754 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
