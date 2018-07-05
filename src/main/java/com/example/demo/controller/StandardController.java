@@ -20,6 +20,6 @@ public class StandardController {
     public String getAllStandard(HttpServletRequest request){
         List<Standard> list = standardService.getAllStandard();
         request.setAttribute("standard",list);
-        return "登录后界面-提案展示主界面.html";
+        return "afterLogin_showStandard.html";
     }
 }
