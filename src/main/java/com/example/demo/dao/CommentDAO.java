@@ -9,6 +9,6 @@ import java.util.List;
 @Mapper
 public interface CommentDAO {
 
-    @Select(value = "SELECT comment.member_name,comment.comment_detailmcom_time from proposal,comment where(proposal.p_id=comment.p_id)")
+    @Select(value = "SELECT comment.member_name,comment.comment_detail,comment.com_time from proposal,comment where(proposal.p_id=comment.p_id)")
     List<Comment> getAllComment();
 }
