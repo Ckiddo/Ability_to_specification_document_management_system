@@ -1,35 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fdae057-cd2e-4024-b647-f0430c32a96f" name="Default" comment="页面跳转交互1.1和数据库连接初尝试">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/GreetingController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/GreetingDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Greeting.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/GreetingService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/result.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/登录后界面-提案展示主界面.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/登录后界面-提案查询.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/StudentController.class" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/StudentController.class" />
+    <list default="true" id="3fdae057-cd2e-4024-b647-f0430c32a96f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Member.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/spring-boot-logging.log" afterPath="$PROJECT_DIR$/logs/spring-boot-logging.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/StudentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/StudentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/StudentDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/StudentDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/主界面.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/主界面.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/注册界面.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/注册界面.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-信息维护.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-信息维护.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案查询-写者.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案查询-写者.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案查询-管理.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案查询-管理.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案编制.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案编制.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案详情.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案详情.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/注册界面.html" afterPath="$PROJECT_DIR$/target/classes/templates/注册界面.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/登录后界面-信息维护.html" afterPath="$PROJECT_DIR$/target/classes/templates/登录后界面-信息维护.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/登录后界面-提案编制.html" afterPath="$PROJECT_DIR$/target/classes/templates/登录后界面-提案编制.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/登录后界面-提案详情.html" afterPath="$PROJECT_DIR$/target/classes/templates/登录后界面-提案详情.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/styles.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +18,7 @@
       <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/StudentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
+            <state relative-caret-position="-8">
               <caret line="65" column="30" lean-forward="false" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -56,8 +30,28 @@
       <file leaf-file-name="注册界面.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/注册界面.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+            <state relative-caret-position="295">
+              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/entity/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Member.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/entity/Member.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -66,38 +60,8 @@
       <file leaf-file-name="主界面.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/主界面.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="登录后界面-提案查询-写者.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案查询-写者.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="登录后界面-提案查询-管理.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案查询-管理.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="登录后界面-提案编制.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案编制.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-8">
+              <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -106,7 +70,7 @@
       <file leaf-file-name="登录后界面-提案详情.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案详情.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
+            <state relative-caret-position="-8">
               <caret line="79" column="26" lean-forward="false" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -118,18 +82,28 @@
       <file leaf-file-name="result.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="-8">
               <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="greeting.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="greeting.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="325">
               <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GreetingDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/dao/GreetingDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -138,8 +112,8 @@
       <file leaf-file-name="GreetingController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/GreetingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="-8">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,8 +127,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -204,10 +178,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/service/GreetingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/dao/GreetingDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/注册界面.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/controller/StudentController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/主界面.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案详情.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/注册界面.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Member.java" />
       </list>
     </option>
   </component>
@@ -225,8 +201,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="280" />
-    <option name="y" value="15" />
+    <option name="x" value="272" />
+    <option name="y" value="-15" />
     <option name="width" value="1054" />
     <option name="height" value="761" />
   </component>
@@ -361,7 +337,7 @@
     <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="SearchEverywhereHistoryKey" value="EmbeddedServlet&#9;PSI&#9;JAVA://org.springframework.boot.web.embedded.jetty.JettyEmbeddedWebAppContext.JettyEmbeddedServletHandler" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Greeting.java" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/sample-master(新)" />
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/com/example/demo/controller/Greeting.java" />
@@ -498,12 +474,20 @@
       <workItem from="1530667888405" duration="1364000" />
       <workItem from="1530678229829" duration="405000" />
       <workItem from="1530683210109" duration="2645000" />
-      <workItem from="1530707439401" duration="15761000" />
+      <workItem from="1530707439401" duration="20887000" />
     </task>
+    <task id="LOCAL-00001" summary="界面交互1.1和数据库存入初尝试">
+      <created>1530755258539</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530755258539</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27528000" />
+    <option name="totallyTimeSpent" value="32654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -548,21 +532,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="页面跳转交互1.1和数据库连接初尝试" />
-    <option name="LAST_COMMIT_MESSAGE" value="页面跳转交互1.1和数据库连接初尝试" />
+    <MESSAGE value="界面交互1.1和数据库存入初尝试" />
+    <option name="LAST_COMMIT_MESSAGE" value="界面交互1.1和数据库存入初尝试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/dao/StudentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/student">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
@@ -691,17 +668,17 @@
         <state relative-caret-position="11457">
           <caret line="603" column="16" lean-forward="false" selection-start-line="603" selection-start-column="16" selection-end-line="603" selection-end-column="16" />
           <folding>
-            <marker date="1530755072057" expanded="true" signature="71125:71142" ph="..." />
-            <marker date="1530755072057" expanded="true" signature="71125:71160" ph="..." />
-            <marker date="1530755072057" expanded="true" signature="71125:71173" ph="..." />
-            <marker date="1530755072057" expanded="true" signature="71125:71188" ph="..." />
-            <marker date="1530755072057" expanded="true" signature="71223:71606" ph="..." />
-            <marker date="1530755072057" expanded="true" signature="71236:71591" ph="..." />
-            <marker date="1530755072057" expanded="true" signature="71271:71577" ph="..." />
-            <marker date="1530755072057" expanded="true" signature="71290:71562" ph="..." />
-            <marker date="1530755072057" expanded="true" signature="71364:71542" ph="..." />
-            <marker date="1530755072057" expanded="true" signature="71404:71508" ph="..." />
-            <marker date="1530755072057" expanded="true" signature="71425:71486" ph="..." />
+            <marker date="1530781863233" expanded="true" signature="67407:67424" ph="..." />
+            <marker date="1530781863233" expanded="true" signature="67407:67442" ph="..." />
+            <marker date="1530781863233" expanded="true" signature="67407:67455" ph="..." />
+            <marker date="1530781863233" expanded="true" signature="67407:67470" ph="..." />
+            <marker date="1530781863233" expanded="true" signature="67505:67888" ph="..." />
+            <marker date="1530781863233" expanded="true" signature="67518:67873" ph="..." />
+            <marker date="1530781863233" expanded="true" signature="67553:67859" ph="..." />
+            <marker date="1530781863233" expanded="true" signature="67572:67844" ph="..." />
+            <marker date="1530781863233" expanded="true" signature="67646:67824" ph="..." />
+            <marker date="1530781863233" expanded="true" signature="67686:67790" ph="..." />
+            <marker date="1530781863233" expanded="true" signature="67707:67768" ph="..." />
           </folding>
         </state>
       </provider>
@@ -847,31 +824,31 @@
         <state relative-caret-position="76">
           <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
           <folding>
-            <marker date="1530712534726" expanded="true" signature="159:530" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="178:242" ph="{...}" />
-            <marker date="1530712534726" expanded="true" signature="263:362" ph="{...}" />
-            <marker date="1530712534726" expanded="true" signature="383:443" ph="{...}" />
-            <marker date="1530712534726" expanded="true" signature="462:522" ph="{...}" />
-            <marker date="1530712534726" expanded="true" signature="537:1986" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="566:1978" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="643:695" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="732:1971" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="765:825" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="901:1963" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="933:1955" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="1028:1245" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="1037:1109" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="1118:1194" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="1203:1232" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="1281:1390" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="1433:1581" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="1445:1575" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="1624:1946" ph="..." />
-            <marker date="1530712534726" expanded="false" signature="1661:1683" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="1684:1935" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="1695:1767" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="1778:1844" ph="..." />
-            <marker date="1530712534726" expanded="true" signature="1855:1921" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="159:530" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="178:242" ph="{...}" />
+            <marker date="1530755048578" expanded="true" signature="263:362" ph="{...}" />
+            <marker date="1530755048578" expanded="true" signature="383:443" ph="{...}" />
+            <marker date="1530755048578" expanded="true" signature="462:522" ph="{...}" />
+            <marker date="1530755048578" expanded="true" signature="537:1999" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="566:1991" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="643:695" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="732:1984" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="765:825" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="901:1976" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="933:1968" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="1028:1245" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="1037:1109" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="1118:1194" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="1203:1232" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="1281:1390" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="1433:1576" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="1445:1575" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="1683:1959" ph="..." />
+            <marker date="1530755048578" expanded="false" signature="1683:1696" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="1697:1948" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="1708:1780" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="1791:1857" ph="..." />
+            <marker date="1530755048578" expanded="true" signature="1868:1934" ph="..." />
           </folding>
         </state>
       </provider>
@@ -930,14 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/entity/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/StudentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -985,16 +954,6 @@
         <state relative-caret-position="133">
           <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/dao/GreetingDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
@@ -1018,7 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案查询-写者.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-8">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1026,7 +985,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案查询-管理.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-8">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1034,7 +993,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案编制.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-8">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1042,8 +1001,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/GreetingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="-8">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1052,7 +1011,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/controller/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="-8">
           <caret line="65" column="30" lean-forward="false" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1060,25 +1019,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/注册界面.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/主界面.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案详情.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="-8">
           <caret line="79" column="26" lean-forward="false" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#table#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1088,16 +1031,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="-8">
           <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/主界面.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="325">
           <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/dao/GreetingDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/注册界面.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/entity/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/entity/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding />
         </state>
       </provider>
