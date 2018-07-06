@@ -1,7 +1,6 @@
 <component name="libraryTable">
   <library name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.6">
     <CLASSES>
-<<<<<<< HEAD
       <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -9,15 +8,6 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6-sources.jar!/" />
-=======
-      <root url="jar://$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar!/" />
-    </CLASSES>
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6-javadoc.jar!/" />
-    </JAVADOC>
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6-sources.jar!/" />
->>>>>>> yrh_test
     </SOURCES>
   </library>
 </component>
