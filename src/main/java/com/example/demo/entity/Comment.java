@@ -1,12 +1,6 @@
 package com.example.demo.entity;
 
-<<<<<<< HEAD
-public class Comment {// 评论
-    int c_ID;
-    String comment_detail;
-    java.util.Date com_time;
-}
-=======
+
 import lombok.Data;
 
 import java.util.Date;
@@ -19,4 +13,3 @@ public class Comment {// 评论
     private Date com_time; //评论时间
     private boolean agree; //是否同意
 }
->>>>>>> ck
