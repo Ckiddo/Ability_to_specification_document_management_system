@@ -16,7 +16,7 @@ import java.util.List;
 * @author Tim Lin
 * @create 2018-07-01 
 **/
-/*
+
 @Controller
 public class StudentController {
 
@@ -71,9 +71,4 @@ public class StudentController {
     }
 
 }
-<<<<<<< HEAD
-
-=======
-*/
->>>>>>> yrh_test
 
