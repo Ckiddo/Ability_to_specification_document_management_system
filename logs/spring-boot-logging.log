@@ -4139,3 +4139,68 @@ org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method cal
 2018-07-05 09:44:20.625  INFO 16452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2018-07-05 09:44:20.637  INFO 16452 --- [main] com.example.demo.SampleApplication       : Started SampleApplication in 6.711 seconds (JVM running for 7.68)
 >>>>>>> yrh_test
+2018-07-06 15:53:47.280  INFO 64731 --- [main] com.example.demo.SampleApplication       : Starting SampleApplication on chenkangdeMacBook.local with PID 64731 (/Users/chenkang/Documents/GitHub/Ability_to_specification_document_management_system/target/classes started by chenkang in /Users/chenkang/Documents/GitHub/Ability_to_specification_document_management_system)
+2018-07-06 15:53:47.286  INFO 64731 --- [main] com.example.demo.SampleApplication       : No active profile set, falling back to default profiles: default
+2018-07-06 15:53:47.466  INFO 64731 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b6faea6: startup date [Fri Jul 06 15:53:47 CST 2018]; root of context hierarchy
+2018-07-06 15:53:50.312  INFO 64731 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-07-06 15:53:50.378  INFO 64731 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-06 15:53:50.379  INFO 64731 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-06 15:53:50.406  INFO 64731 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/chenkang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-07-06 15:53:50.616  INFO 64731 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-06 15:53:50.617  INFO 64731 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3151 ms
+2018-07-06 15:53:50.931  INFO 64731 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-06 15:53:50.939  INFO 64731 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-06 15:53:50.940  INFO 64731 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-06 15:53:50.940  INFO 64731 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-06 15:53:50.940  INFO 64731 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-06 15:53:51.576  INFO 64731 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06 15:53:52.054  INFO 64731 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b6faea6: startup date [Fri Jul 06 15:53:47 CST 2018]; root of context hierarchy
+2018-07-06 15:53:52.172  INFO 64731 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[],methods=[GET]}" onto public java.lang.String com.example.demo.controller.CommentController.getAllStudent(javax.servlet.http.HttpServletRequest)
+2018-07-06 15:53:52.175  WARN 64731 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'informationController' method 
+public java.lang.String com.example.demo.controller.InformationController.getAllInformation(javax.servlet.http.HttpServletRequest)
+to {[],methods=[GET]}: There is already 'commentController' bean method
+public java.lang.String com.example.demo.controller.CommentController.getAllStudent(javax.servlet.http.HttpServletRequest) mapped.
+2018-07-06 15:53:52.181  INFO 64731 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-07-06 15:53:52.206  INFO 64731 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-07-06 15:53:52.217 ERROR 64731 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'informationController' method 
+public java.lang.String com.example.demo.controller.InformationController.getAllInformation(javax.servlet.http.HttpServletRequest)
+to {[],methods=[GET]}: There is already 'commentController' bean method
+public java.lang.String com.example.demo.controller.CommentController.getAllStudent(javax.servlet.http.HttpServletRequest) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1708) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at com.example.demo.SampleApplication.main(SampleApplication.java:10) [classes/:na]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'informationController' method 
+public java.lang.String com.example.demo.controller.InformationController.getAllInformation(javax.servlet.http.HttpServletRequest)
+to {[],methods=[GET]}: There is already 'commentController' bean method
+public java.lang.String com.example.demo.controller.CommentController.getAllStudent(javax.servlet.http.HttpServletRequest) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:580) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:544) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:265) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:250) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684) ~[na:1.8.0_171]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:248) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:218) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:188) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:129) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1767) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	... 16 common frames omitted
+

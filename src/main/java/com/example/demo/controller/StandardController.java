@@ -16,17 +16,12 @@ public class StandardController {
     @Autowired
     private StandardService standardService;
 
-<<<<<<< HEAD
-    @RequestMapping(value = "/sta/getAllStandard",method = RequestMethod.GET);
-    public String getAllStandard(HttpServletRequest request){
-        List<Standard> list = standardService.getAllStandard();
-        request.setAttribute("");
-=======
+
     @RequestMapping(value = "/stu/getAllStandards",method = RequestMethod.GET)
     public String getAllStandard(HttpServletRequest request){
         List<Standard> list = standardService.getAllStandard();
         request.setAttribute("standard",list);
         return "afterLogin_showStandard.html";
->>>>>>> ck
+
     }
 }

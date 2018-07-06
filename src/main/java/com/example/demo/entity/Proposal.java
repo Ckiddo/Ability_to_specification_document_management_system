@@ -1,20 +1,6 @@
 package com.example.demo.entity;
 
-<<<<<<< HEAD
-import java.util.List;
 
-public class Proposal {
-
-    int P_ID;
-    String name;
-    String author;
-    java.util.Date  Close_time;
-    String status;
-    String content;
-    int agree_num;
-    int disagree_num;
-    List<Comment> commontList;
-=======
 import lombok.Data;
 
 //import java.util.List;
@@ -32,5 +18,5 @@ public class Proposal {
     private int disagree_num;
     private String sub_time;
     //private List<Comment> commontList;
->>>>>>> ck
+
 }

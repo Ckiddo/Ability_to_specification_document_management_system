@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns:th="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../static/css/styles.css"/>
@@ -37,9 +37,6 @@
 	<div class="container show-container ">
 		<div class="small-container article-container">
 			<!--动态内容区域，展示天文章标题和日期-->
-			<tr th:each="s,iterStat : ${standard}" th:class="${iterStat.ood}? 'odd'">
-				<td th:text=" ${s.getId()}">
-			</tr>
 			<p class="article">关于草案评审的工作规范----------2017/06/03</p>
 			<p class="article">管理系统申请资格规范------------2017/05/03</p>
 			<p class="article">提案草稿审批规范规范------------2017/04/03</p>
