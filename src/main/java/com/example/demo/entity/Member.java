@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class Member {
     String name;
     String sex;
@@ -28,3 +29,21 @@ public class Member {
     private String specialCommittee;
 >>>>>>> ck
 }
+=======
+import lombok.Data;
+
+@Data
+public class Member {
+    private String name;
+    private  String password;
+    private  String sex;
+    private  String birthday;
+    private  String homeaddress;
+    private  String contactinfor;
+    private  String referees;
+    private  String industrybranch;
+    private  String specialcommittee;
+    private  Integer usergroup;
+}
+
+>>>>>>> yrh_test

@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+<<<<<<< HEAD
 <html>
 <head>
 <meta charset="utf-8">
@@ -69,6 +70,49 @@
 					<p class="note">家庭住址</p><input type="text" class="text-input" required><p class="mark">*</p><br>
 					<p class="note">联系方式</p><input type="text" class="text-input" required><p class="mark">*</p><br>
 					<p class="note">推荐人&nbsp;&nbsp;&nbsp;</p><input type="text" class="text-input" required>&nbsp;<br>
+=======
+<html  xmlns="http://www.w3.org/1999/xhtml"
+		  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+<title>入会申请</title>
+<style>
+	.note{
+	display:block;
+	float:left;
+	margin-left:20px;
+	}
+
+	.text-input {
+	width:200px;
+	}
+</style>
+</head>
+
+<body>
+	<div class="root-container">
+		<div class="container main-container">
+			<header class="big-header">能力规范管理系统</header>
+			<br>
+			<div class="container	 register-container">
+				<header class="small-header">入会申请</header>
+				<div>
+				<!--/*@thymesVar id="member" type=""*/-->
+				<form id="iform" th:action="@{/注册界面.html}" th:method="get" th:object="${member}" class="container" align="center">
+					<p class="note">姓名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><input type="text" th:field="*{name}" class="text-input" required><p class="mark">*</p><br>
+					<p class="note">密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><input type="text" th:field="*{password}" class="text-input" required><p class="mark">*</p><br>
+					<p class="note">性别&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><input type="text" th:field="*{sex}" class="text-input" required><p class="mark">*</p><br>
+					<p class="note">出生日期</p><input type="text" th:field="*{birthday}" class="text-input" required><p class="mark">*</p><br>
+					<p class="note">家庭住址</p><input type="text" th:field="*{homeaddress}" class="text-input" required><p class="mark">*</p><br>
+					<p class="note">联系方式</p><input type="text" th:field="*{contactinfor}" class="text-input" required><p class="mark">*</p><br>
+					<p class="note">推荐人&nbsp;&nbsp;&nbsp;</p><input type="text" th:field="*{referees}" class="text-input" required>&nbsp;<br>
+
+					<p class="note">行业分会</p><input type="text" th:field="*{industrybranch}" class="text-input" required><p class="mark">*</p><br>
+					<p class="note">专委会&nbsp;&nbsp;&nbsp;</p><input type="text" th:field="*{specialcommittee}" class="text-input" required>&nbsp;<br>
+
+					<!--
+>>>>>>> yrh_test
 					<p class="note">行业分会</p>
 						<select name="cars" style="width:200px">
 							<option value="volvo">华北分会</option>
@@ -76,6 +120,11 @@
 							<option value="fiat">华东分会</option>
 							<option value="audi">华南分会</option>
 						</select><p class="mark">*</p><br>
+<<<<<<< HEAD
+=======
+					-->
+					<!--
+>>>>>>> yrh_test
 					<p class="note">专委会&nbsp;&nbsp;&nbsp;</p>
 						<select name="cars" style="width:200px">
 							<option value="volvo">专家组</option>
@@ -83,16 +132,30 @@
 							<option value="fiat">普通组</option>
 							<option value="audi">小白组</option>
 						</select><p class="mark">*</p><br>
+<<<<<<< HEAD
+=======
+					-->
+>>>>>>> yrh_test
 	
 					<br>
 					<br>
 					<div class="button-container" >
+<<<<<<< HEAD
 						<input class="control-button" type="submit" value="提交" style="margin-right:40px;">
 						<button class="control-button" style="margin-right:40px;">取消</button>
 						<button class="control-button" >清除</button>
 					<div>
 				</form>
 				</div>
+=======
+						<input class="button" type="submit" value="提交" style="margin-right:40px;"/>
+						<a  href="主界面.html" class="button" style=" display:inline-block;text-decoration:none;margin-right:40px;">取消</a>
+						<input type="reset" value="清除" class="button">
+					</div>
+				</form>
+				</div>
+			</div>
+>>>>>>> yrh_test
 		</div>
 	</div>
 </body>

@@ -2,46 +2,10 @@
 <html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
 <meta charset="utf-8">
-<link >
+<link rel="stylesheet" type="text/css" href="../static/css/styles.css"/>
+<title>主界面</title>
 </head>
 <style>	
-
-* {
-		margin: 0;
-		box-sizing: border-box;
-	}
-	
-	.root-container{
-		border:1px solid rgb(202,228,202);
-		width:1000px;
-		height:auto;
-		margin-top:100px;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	
-	.container{
-		border:1px solid rgb(202,228,202);
-		width:900px;
-		height:auto;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	
-	.small-container{
-		border:1px solid rgb(202,228,202);
-		width:800px;
-		height:auto;
-		margin-left:auto;
-		margin-right:auto;
-		margin-bottom:50px;<!---->
-	}
-	
-	.big-header {
-		text-align:center;
-		background-color:rgb(202,228,202);
-		font-size:2em;
-	}
 	
 	.login-container{
 		margin-top:20px;
@@ -62,10 +26,13 @@
 		<form style="display:inline">
 			用户名<input type="text" required>
 			&nbsp;密码&nbsp;<input type="text" required>
-			<button class="control-button" >登陆</button>
+			<a href="登录后界面-提案查询-写者.html">
+				<button class="button" >登陆</button>
+			</a>
 		</form>
-		<button class="control-button">注册</button>
-		
+		<a href="./注册界面.html">
+		<button class="button" >注册</button>
+		</a>
 	</div>
 	<div class="container show-container ">
 		<div class="small-container article-container">
