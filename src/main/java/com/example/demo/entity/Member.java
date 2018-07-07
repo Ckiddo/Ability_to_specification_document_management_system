@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+
 import lombok.Data;
 
 @Data
@@ -14,5 +15,10 @@ public class Member {
     private  String industrybranch;
     private  String specialcommittee;
     private  Integer usergroup;
+
+    public void setUsergroup(Integer setnum){
+        usergroup=setnum;
+    };
 }
+
 

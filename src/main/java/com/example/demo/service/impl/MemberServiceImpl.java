@@ -6,6 +6,8 @@ import com.example.demo.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class MemberServiceImpl implements MemberService {
 
@@ -14,7 +16,11 @@ public class MemberServiceImpl implements MemberService {
     private MemberDAO memberDAO;
 
     @Override
+    public List<Member> getAllMember() {
+        return memberDAO.getAllMember();
+    }
 
+    @Override
     public boolean insert(Member member) {
         System.out.println("miao");
 
@@ -31,6 +37,29 @@ public class MemberServiceImpl implements MemberService {
         }
 
         return true;
+    }
+
+    @Override
+    public boolean findname(Member member) {
+        System.out.println("miao");
+        Member member1 = memberDAO.find(member.getName());
+        System.out.println("输入的名字"+member.getName());
+        System.out.println("输入的密码"+member.getPassword());
+        System.out.println("数据库的名字"+member1.getName());
+        System.out.println("数据库的密码"+member1.getPassword());
+        if (null == member1){
+            System.out.println("不存在用户名");
+            return false;
+        }
+        // do something...
+
+
+        else{
+            if(member.getPassword().equals(member1.getPassword()))
+                return true;
+            else
+                return false;
+        }
     }
 }
 

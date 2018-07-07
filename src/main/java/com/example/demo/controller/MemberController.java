@@ -17,20 +17,23 @@ import java.util.List;
  **/
 @Controller
 
-public class MemberController {
+public class  MemberController {
 
 
     @Autowired
     private MemberService memberService;
 
-/*
+
     @RequestMapping(value = "/注册界面.html",method = RequestMethod.GET)
     public String insert(@ModelAttribute("member") Member member,Model model){
         System.out.println("hei");
+        if (memberService.findname(member)==false)
+            return"/注册界面.html";
+        else
         memberService.insert(member);
-        return "redirect:/主界面.html";
+        return "/主界面.html";
     }
-*/
+
     //更新信息
     /*
     @RequestMapping(value = "/stu/update",method = RequestMethod.GET)
@@ -42,12 +45,22 @@ public class MemberController {
     */
     //提交到页面
 
-    @RequestMapping(value = "/注册界面.html",method = RequestMethod.GET)
+    @RequestMapping(value = "/insert",method = RequestMethod.GET)
     public String indexMember(Model model){
         model.addAttribute("member",new Member());
         return "注册界面.html";
-    }
+}
 
+    @RequestMapping(value = "/login",method = RequestMethod.GET)
+    public String getMember(@ModelAttribute("member") Member member,Model model){
+System.out.println( memberService.findname(member));
+        System.out.println("输入的名字"+ member.getName());
+        System.out.println( "数据库的名字"+member.getPassword());
+       if( memberService.findname(member)==true)
+        return "登录后界面-提案详情.html";
+       else
+           return "注册界面.html";
+    }
     //主页
     /*
     @RequestMapping(value = "/注册界面.html",method = RequestMethod.GET)
@@ -57,7 +70,8 @@ public class MemberController {
     */
 
     @RequestMapping("/index")
-    public String  index(){
+    public String  index(Model model){
+        model.addAttribute("member",new Member());
         return "主界面.html";
     }
 
