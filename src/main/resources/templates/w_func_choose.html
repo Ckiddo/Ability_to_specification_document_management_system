@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+<title>写者-功能选择</title>
+</head>
+<style>	
+	
+	.login-control{
+		text-align:right;
+		background-color:rgb(202,228,202);
+		
+	}
+	.func-choose-button{
+		display:inline;
+		width:49.6%;
+		font-size:1.5em;
+		padding:0.2em;
+		background-color:white;
+	}
+	
+	th,td {
+		border:1px solid black;
+		width:100%;
+		min-width:5em;
+	}
+	table {
+		border:1px solid black;
+	}
+</style>
+<body>
+<div class="root-container">
+	<header class="big-header">能力规范文稿管理系统</header>
+	<div class="login-control">
+	admin已登录<button class="button">注销</button>
+	</div>
+	<div class="func-choose-container">
+			<a href="w_func_choose.html">
+				<button class="func-choose-button" >写者</button>
+			</a>
+			<button class="func-choose-button disabled-button" disabled>管理</button>
+	<div class="container">
+		<div class="small-container">
+				<header class="small-header">写者功能</header>
+				<a href="/getallproposal">
+					<button class="big-button">提案查询</button>
+				</a>
+				<a href="/enterproposal">
+					<button class="big-button">提案编制</button>
+				</a>
+				<a href="w_norm_search.html">
+					<button class="big-button">规范查询</button>
+				</a>
+				<a href="w_norm_make.html">
+					<button class="big-button">规范编制</button>
+				</a>
+				<a href="w_imfo_maintain.html">
+					<button class="big-button">信息维护</button>
+				</a>
+				<br/>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+</html>

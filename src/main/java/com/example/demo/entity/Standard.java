@@ -1,6 +1,11 @@
 package com.example.demo.entity;
 
+
+import lombok.Data;
+
+@Data
 public class Standard {
-    String s_name;
-    String s_content;
+    private String name;
+    private String editDate;
+
 }

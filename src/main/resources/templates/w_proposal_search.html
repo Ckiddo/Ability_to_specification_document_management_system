@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+<title>写者-提案查询</title>
+</head>
+<style>	
+
+	.login-control{
+		text-align:right;
+		background-color:rgb(202,228,202);
+		
+	}
+	
+	.func-choose-button{
+		display:inline;
+		width:49.6%;
+		font-size:1.5em;
+		padding:0.2em;
+		background-color:white;
+	}
+	
+	.button{
+		background-color:rgb(25,155,213);
+		color:white;
+		border:0px;
+		border-radius:2px;
+		padding:2px 4px 2px 4px;
+		
+	}
+	
+	th,td {
+		border:1px solid black;
+		width:100%;
+		min-width:5em;
+	}
+	table {
+		border:1px solid black;
+	}
+</style>
+
+<body>
+<div class="root-container">
+	<header class="big-header">能力规范文稿管理系统</header>
+	<div class="login-control">
+	admin已登录<button class="button">注销</button>
+	</div>
+	<div class="func-choose-container">
+		<a href="w_func_choose.html">
+			<button class="func-choose-button" >写者</button>
+		</a>
+		<a href="m_func_choose.html" >
+			<button class="func-choose-button disabled-button" disabled>管理</button>
+		</a>
+	<div class="container">
+		<div class="small-container">
+				<header class="small-header">提案列表</header>
+				<!--下面为动态更新内容，提案列表-->
+				<table>
+					<tr>
+						<th><input type="checkbox" style="float:	left" id = "check" onclick="choice()">全选</th>
+						<th>编号</th>
+						<th>提案名称</th>
+						<th>作者</th>
+						<th>截止日期</th>
+						<th>状态</th>
+						<th>附议数</th>
+						<th>反对数</th>
+                        <th><input type="checkbox" style="float:	left">全选</th>
+
+					</tr>
+
+					<tr th:each="s,iterStat : ${proposal}" th:class="${iterStat.odd}? 'odd'">
+                        <td><input type="checkbox" name = "checkid"></td>
+                        <td th:text=" ${s.getP_id()}"></td>
+                        　　<td> <a th:href="@{/prodetail(p_id=${s.p_id})}"th:text=" ${s.getName()}"></a></td>
+						　　<td th:text=" ${s.getAuthor()}"></td>
+						　　<td th:text=" ${s.getClose_time()}"></td>
+							<td th:text=" ${s.getStatus()}"></td>
+							<td th:text=" ${s.getAgree_num()}"></td>
+							<td th:text=" ${s.getDisagree_num()}"></td>
+						</td>
+					</tr>
+				<!--	<tr>
+						<td><input type="checkbox">1</td>
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox">1</td>
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+					-->
+				</table>
+				<br/>
+				<button class="button">打印</button>
+
+				<button class="button">撤销</button>
+		</div>
+	</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+    function choice() {
+        var box = document.getElementsByClassName("check");
+        for (var x = 0; x < box.length; x++) box[x].check = true;
+    }
+</script>
+</body>
+</html>

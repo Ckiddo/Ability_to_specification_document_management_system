@@ -1,12 +1,23 @@
 package com.example.demo.entity;
 
-public class member {
-    String name;
-    String sex;
-    java.util.Date birthdate;
-    String homeAddress;
-    String contactInfor;
-    String referees;
-    String IndustryBranch;
-    String specialCommittee;
+
+import lombok.Data;
+
+@Data
+public class Member {
+    private String name;
+    private  String password;
+    private  String sex;
+    private  String birthday;
+    private  String homeaddress;
+    private  String contactinfor;
+    private  String referees;
+    private  String industrybranch;
+    private  String specialcommittee;
+    private  Integer usergroup;
+
+    public void setUsergroup(Integer setnum){
+        usergroup=setnum;
+    };
 }
+
