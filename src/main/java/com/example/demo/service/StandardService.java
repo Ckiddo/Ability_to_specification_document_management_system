@@ -6,7 +6,8 @@ import com.example.demo.entity.Standard;
 import java.util.List;
 
 public interface StandardService {
-    List<Standard> getallStandard();
+    public List<Standard> getallStandard();
     public boolean insert(Standard standard);
-    List<Standard> getproposal(String name);
+   // List<Standard> getproposal(String name);
+    public Standard getonestandard(int s_id);
 }

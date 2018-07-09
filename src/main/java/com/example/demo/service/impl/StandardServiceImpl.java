@@ -18,6 +18,7 @@ public class StandardServiceImpl implements StandardService {
         return standardDAO.getallstandard();
     }
 
+    @Override
     public boolean insert(Standard standard) {
         System.out.println("miao");
 
@@ -36,8 +37,9 @@ public class StandardServiceImpl implements StandardService {
     }
 
     @Override
-    public List<Standard> getproposal(String name) {
-        List<Standard> standards1=standardDAO.getstandard(name);
-        return standards1;
+    public Standard getonestandard(int s_id) {
+        Standard standards = standardDAO.getonestandard(s_id);
+        return standards;
     }
+
 }

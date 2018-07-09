@@ -44,38 +44,36 @@
 		<div class="small-container">
 				<header class="small-header">信息维护</header>
 				<!--下面为动态更新内容，账号?-->
-				<table>
-					<tr>
-						<th>序号</th>
-						<th>姓名</th>
-						<th>单位</th>
-						<th>职称</th>
-						<th>职务</th>
-						<th>电话</th>
-						<th>邮箱</th>
-						<th>微信</th>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						<td>2</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						<td>2</td>
-					</tr>
-				</table>
+				<form>
+					<table>
+						<tr th:object="${member}">
+						<tr>
+							<th >序号</th><td >2</td><td ><input type="text"></td>
+						</tr>
+						<tr>
+							<th>姓名</th><td>2</td><td><input type="text"></td>
+						</tr>
+						<tr>
+							<th>职称</th><td>2</td><td><input type="text"></td>
+						</tr>
+						<tr>
+							<th>职务</th><td>2</td><td><input type="text"></td>
+						</tr>
+						<tr>
+							<th>电话</th><td>2</td><td><input type="text"></td>
+						</tr>
+						<tr>
+							<th>邮箱</th><td>2</td><td><input type="text"></td>
+						</tr>
+						<tr>
+							<th>微信</th><td>2</td><td><input type="text"></td>
+						</tr>
+						
+					</table>
+					<br/>
+					<button class="button" type="submit" style="margin-left:45%;margin-right:45%">确认修改</button>
+					
+				</form>
 				<br/>
 		</div>
 	</div>

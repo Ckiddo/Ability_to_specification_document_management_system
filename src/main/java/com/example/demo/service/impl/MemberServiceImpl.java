@@ -72,5 +72,38 @@ public class MemberServiceImpl implements MemberService {
         else
         return member1.getUsergroup();
     }
+
+    public boolean update(Member member){
+        if (null == member){
+            return false;
+        }
+        // do something...
+        if( memberDAO.update(member.getName(),member.getCompany(),member.getTitle(),member.getPosition(),member.getPhonenum(),member.getEmail(),member.getWechat())==0)
+        {
+            System.out.println("返回0");
+        }
+        else{
+            System.out.println("返回非0");
+        }
+
+        return true;
+    }
+    public Member findaname(Member member) {
+        System.out.println("miao");
+        Member member1 = memberDAO.find(member.getName());
+     /*   System.out.println("输入的名字"+member.getName());
+        System.out.println("输入的密码"+member.getPassword());
+        System.out.println("数据库的名字"+member1.getName());
+        System.out.println("数据库的密码"+member1.getPassword());*/
+        if (null == member1){
+            System.out.println("不存在用户名");
+            return null;                       // 不存在用户名为 0
+        }
+        // do something...
+        else{
+            return member1;
+        }
+    }
+
 }
 

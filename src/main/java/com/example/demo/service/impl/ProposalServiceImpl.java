@@ -47,4 +47,10 @@ public class ProposalServiceImpl implements ProposalService {
         List<Proposal> proposal1=proposalDAO.getproposal(author);
         return proposal1;
     }
+
+    @Override
+    public boolean deleteproposal(int p_id){
+        proposalDAO.delete(p_id);
+        return true;
+    }
 }

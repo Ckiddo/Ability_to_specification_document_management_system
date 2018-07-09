@@ -12,4 +12,8 @@ public interface MemberService {
     int findname(Member member);
 
     int getusergroup(Member member);
+
+    boolean update(Member member);
+
+    Member findaname(Member member);
 }

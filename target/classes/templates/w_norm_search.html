@@ -43,7 +43,9 @@
 <div class="root-container">
 	<header class="big-header">能力规范文稿管理系统</header>
 	<div class="login-control">
-	admin已登录<button class="button">注销</button>
+		<a href="/index" >
+			<button class="button">注销</button>
+		</a>
 	</div>
 	<div class="func-choose-container">
 		<a href="w_func_choose.html">
@@ -58,34 +60,18 @@
 				<!--下面为动态更新内容，提案列表-->
 				<table>
 					<tr>
-						<th><input type="checkbox" style="float:	left">全选</th>
+						<th><input type="checkbox" id="checkAll" onclick="checkAll()" style="float:	left;max-width:4em">全选</th>
 						<th>编号</th>
 						<th>提案名称</th>
-						<th>作者</th>
-						<th>截止日期</th>
-						<th>状态</th>
-						<th>附议数</th>
-						<th>反对数</th>
+						<th>提交日期</th>
 					</tr>
-					<tr>
-						<td><input type="checkbox">1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
+					<tr th:each="s,iterStat : ${standard}" th:class="${iterStat.odd}? 'odd'">
+						<td style="width:4em"><input type="checkbox" name="checkbox"></td>
+						<td th:text=" ${s.getS_id()}"></td>
+						　　<td> <a th:href="@{/standarddetail(s_id=${s.s_id})}"th:text=" ${s.getName()}"></a></td>
+						　　<td th:text=" ${s.getEditDate()}"></td>
+						</td>
 					</tr>
-					<tr>
-						<td><input type="checkbox">1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
 					</tr>
 				</table>
 				<br/>
@@ -95,5 +81,22 @@
 	</div>
 	</div>
 </div>
+<script type="text/javascript">
+    function checkAll() {
+        var all=document.getElementById('checkAll');//获取到点击全选的那个复选框的id
+        var one=document.getElementsByName('checkbox');//获取到复选框的名称
+        if(all.checked==true){//因为获得的是数组，所以要循环 为每一个checked赋值
+            for(var i=0;i<one.length;i++){
+                one[i].checked=true;
+            }
+
+        }else{
+            for(var j=0;j<one.length;j++){
+                one[j].checked=false;
+            }
+        }
+    }
+
+</script>
 </body>
 </html>

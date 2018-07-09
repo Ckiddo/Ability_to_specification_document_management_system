@@ -2,6 +2,7 @@ package com.example.demo.dao;
 
 import com.example.demo.entity.Member;
 import com.example.demo.entity.Proposal;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -28,4 +29,8 @@ public interface ProposalDAO {
 
     @Select(value = "select * from proposal")
     List<Proposal> getallproposal();
+
+    @Delete(value = "DELETE FROM `docsmanagesys`.`proposal` WHERE `p_id`=#{p_id}")
+   int delete(int p_id);
+
 }

@@ -10,4 +10,5 @@ public interface ProposalService {
     public boolean insert(Proposal proposal);
     List<Proposal> getproposal(String author);
     Proposal getoneproposal(int p_id);
+    boolean deleteproposal(int p_id);
 }

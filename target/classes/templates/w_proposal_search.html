@@ -44,7 +44,11 @@
 <div class="root-container">
 	<header class="big-header">能力规范文稿管理系统</header>
 	<div class="login-control">
-	admin已登录<button class="button">注销</button>
+
+	admin已登录
+        <a href="/index" >
+            <button class="button">注销</button>
+        </a>
 	</div>
 	<div class="func-choose-container">
 		<a href="w_func_choose.html">
@@ -57,9 +61,11 @@
 		<div class="small-container">
 				<header class="small-header">提案列表</header>
 				<!--下面为动态更新内容，提案列表-->
-				<table>
-					<tr>
-						<th><input type="checkbox" style="float:	left" id = "check" onclick="choice()">全选</th>
+            <form action="/delete" method="post" >
+
+
+            <table>
+                        <th>全选</th>
 						<th>编号</th>
 						<th>提案名称</th>
 						<th>作者</th>
@@ -67,20 +73,19 @@
 						<th>状态</th>
 						<th>附议数</th>
 						<th>反对数</th>
-                        <th><input type="checkbox" style="float:	left">全选</th>
 
 					</tr>
 
 					<tr th:each="s,iterStat : ${proposal}" th:class="${iterStat.odd}? 'odd'">
-                        <td><input type="checkbox" name = "checkid"></td>
-                        <td th:text=" ${s.getP_id()}"></td>
+                        <td style="width:4em"><input type="checkbox" name="checkbox"  th:value="${s.p_id}"></td>
+                            <td th:text=" ${s.getP_id()}"></td>
                         　　<td> <a th:href="@{/prodetail(p_id=${s.p_id})}"th:text=" ${s.getName()}"></a></td>
 						　　<td th:text=" ${s.getAuthor()}"></td>
 						　　<td th:text=" ${s.getClose_time()}"></td>
 							<td th:text=" ${s.getStatus()}"></td>
 							<td th:text=" ${s.getAgree_num()}"></td>
 							<td th:text=" ${s.getDisagree_num()}"></td>
-						</td>
+
 					</tr>
 				<!--	<tr>
 						<td><input type="checkbox">1</td>
@@ -103,21 +108,27 @@
 						<td>2</td>
 					</tr>
 					-->
-				</table>
-				<br/>
-				<button class="button">打印</button>
-
-				<button class="button">撤销</button>
+                </table>
+                    <button  type="button" class="button" onclick="checkAll()">全选</button>
+                    <button type="button" class="button" >打印</button>
+                    <button class="button" type="submit">撤销</button>
+            </form>
 		</div>
 	</div>
 	</div>
 </div>
 
 <script type="text/javascript">
-    function choice() {
-        var box = document.getElementsByClassName("check");
-        for (var x = 0; x < box.length; x++) box[x].check = true;
+
+    function checkAll() {
+        var one = document.getElementsByName('checkbox');//获取到复选框的名称
+
+        for (var i = 0; i < one.length; i++) {
+            one[i].checked = true;
+        }
+
     }
+
 </script>
 </body>
 </html>

@@ -34,7 +34,9 @@
 <div class="root-container">
 	<header class="big-header">能力规范文稿管理系统</header>
 	<div class="login-control">
-	admin已登录<button class="button">注销</button>
+        <a href="/index" >
+            <button class="button">注销</button>
+        </a>
 	</div>
 	<div class="func-choose-container">
 		<a href="w_func_choose.html">
@@ -47,22 +49,25 @@
 				<div style="width:50%;margin-left:auto;margin-right:auto">
 					<br>
 					<form th:action="@{/proinsert}" th:method="get" th:object="${proposal}"  style="display:inline">
-					提案名称<input type="text"th:field="*{name}">
-					<br/>
-					<p>提案内容</p>
-					<textarea rows="10" cols="60"th:field="*{content}"></textarea>
-						<br/>
-					<input type="radio">我已阅读<p style="color:red;display:inline">提案建议要求</p>
-					<button class="button">打印</button>
-						<button type="submit" class="button" >保存</button>
-					<button class="button">提交</button>
-					</form>
-				</div>
+                        提案名称<input type="text"th:field="*{name}">
+                        <br/>
+                        <p>提案内容</p>
+                        <textarea rows="10" cols="60"th:field="*{content}"></textarea>
+                            <br/>
+                        <input type="radio" id="readRadio" onclick="readCheck()">我已阅读<p style="color:red;display:inline">提案建议要求</p>
+                        <button class="button">打印</button>
+
+                            <button type="submit" class="button" id="save">保存</button>
+                        <button  class="button" id="summit" >提交</button>
+                    </form>
+        </div>
 				<header class="small-header">提案列表</header>
 				<!--下面为动态更新内容，提案列表-->
-				<table style="width:80%;margin-left:auto;margin-right:auto">
+            <form action="/deletemy" method="post" >
+            <table style="width:80%;margin-left:auto;margin-right:auto">
 					<tr>
-						<th><input type="checkbox" style="float:	left;max-width:4em">全选</th>
+
+						<th><input type="checkbox" id="checkAll" onclick="checkAll()" style="float:	left;max-width:4em">全选</th>
 						<th>提案ID</th>
 						<th>提案名称</th>
 						<th >提交时间</th>
@@ -70,22 +75,39 @@
 						
 					</tr>
 					<tr th:each="s,iterStat : ${proposal1}" th:class="${iterStat.odd}? 'odd'">
-						<td style="width:4em"><input type="checkbox"></td>
+                        <td style="width:4em"><input type="checkbox" name="checkbox"  th:value="${s.p_id}"></td>
 						<td th:text=" ${s.getP_id()}"></td>
 						　　<td th:text=" ${s.getName()}"></td>
 						　　<td th:text=" ${s.getSub_time()}"></td>
 						<td th:text=" ${s.getStatus()}"></td>
-
+                </table>
 						</td>
 					
 					</tr>
-				</table>
+
 				<br/>
+            <button  type="button" class="button" onclick="checkAll()">全选</button>
 				<button class="button">打印</button>
-				<button class="button">撤销</button>
+            <button class="button" type="submit">撤销</button>
+            </form>
 		</div>
 	</div>
 	</div>
+
+
 </div>
+<script type="text/javascript">
+
+    function checkAll() {
+        var one = document.getElementsByName('checkbox');//获取到复选框的名称
+
+        for (var i = 0; i < one.length; i++) {
+            one[i].checked = true;
+        }
+
+    }
+
+</script>
+
 </body>
 </html>

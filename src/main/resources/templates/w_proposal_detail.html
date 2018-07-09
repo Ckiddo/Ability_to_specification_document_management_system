@@ -36,7 +36,9 @@
 <div class="root-container">
 	<header class="big-header">能力规范文稿管理系统</header>
 	<div class="login-control">
-	admin已登录<button class="button">注销</button>
+		<a href="/index" >
+			<button class="button">注销</button>
+		</a>
 	</div>
 	<div class="func-choose-container">
 			<a href="w_func_choose.html">
@@ -51,15 +53,15 @@
 				<table>
 					<tr th:object="${proposal}">
 				<tr>
-					<td>提案id</td><td th:text="*{proposal.p_id}"></td>
-					<td>提案名称</td><td th:text="*{proposal.name}"></td>
+					<td>提案id:&nbsp;&nbsp;</td><td th:text="*{proposal.p_id}">&nbsp;&nbsp;&nbsp;</td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提案名称:&nbsp;&nbsp;&nbsp;</td><td th:text="*{proposal.name}">&nbsp;&nbsp;&nbsp;</td>
 				</tr>
 				<tr>
-					<td>提案作者</td><td th:text="*{proposal.author}"></td>
-					<td>截止日期</td><td th:text="*{proposal.close_time}"></td>
+					<td>提案作者:&nbsp;&nbsp;</td><td th:text="*{proposal.author}">&nbsp;&nbsp;</td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截止日期:&nbsp;&nbsp;&nbsp;</td><td th:text="*{proposal.close_time}">&nbsp;&nbsp;&nbsp;</td>
 				</tr>
 				<tr>
-					<td>提案内容</td>
+					<td>提案内容:&nbsp;</td>
 				</tr>
 				</table>
 				<div class="article-container">
@@ -67,12 +69,15 @@
 				</div>
 				<br/>
 				<div class="tiny-container">
-					<form>
-						<input type="text">
-						<input type="radio">附议
-						<input type="radio">反对
-						<button class="button">提交</button>
+
+						<form th:action="@{/cominsert}" th:method="get" th:object="${comment}"  style="display:inline">
+						<input type="text"th:field="*{comment_detail}">
+						<input type="radio" name="sex">附议
+						<input type="radio" name="sex">反对
+							<button  class="button" id="summit" >提交</button>
+						</form>
 				</div>
+
 				<br/>
 				<div class="tiny-container">
 					<p>评论区</p>
@@ -81,16 +86,12 @@
 							<th>评论人</th>
 							<th>评论内容</th>
 							<th>时间</th>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>2</td>
-							<td>3</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>2</td>
-							<td>3</td>
+						<tr th:each="s,iterStat : ${comment1}" th:class="${iterStat.odd}? 'odd'">
+
+							<td th:text=" ${s.member_name}"></td>
+							　　 <td th:text=" ${s.comment_detail}"></td>
+							　　<td th:text=" ${s.com_time}"></td>
+							</td>
 						</tr>
 					</table>
 				</div>

@@ -25,7 +25,7 @@
     <div class="login-container">
         <div align="center">
             <p style="display: inline;color:red">密码错误或用户名不存在</p>
-            <a href="/login_menu">
+            <a href="/index">
                 <button class="button" >点击返回</button>
             </a>
         </div>
@@ -34,13 +34,11 @@
     <div class="container show-container ">
         <div class="small-container article-container">
             <!--动态内容区域，展示天文章标题和日期-->
-            <p class="article">关于草案评审的工作规范----------2017/06/03</p>
-            <p class="article">管理系统申请资格规范------------2017/05/03</p>
-            <p class="article">提案草稿审批规范规范------------2017/04/03</p>
-            <p class="article">成立分组规范--------------------2017/03/30</p>
-            <p class="article">草案详情撰写规范----------------2017/03/12</p>
-            <p class="article">数据管理规范--------------------2017/03/08</p>
+            <tr th:each="s,iterStat : ${standard}" th:class="${iterStat.odd}? 'odd'">
 
+                　<td> <a th:href="@{/stddetail(s_id=${s.s_id})}"th:text=" ${s.name}"></a></td>
+                　　<td th:text=" ${s.getEditDate()}"></td>
+                <br>
 
         </div>
     </div>

@@ -10,10 +10,7 @@ import com.example.demo.service.ProposalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -61,11 +58,18 @@ public class  ProposalController {
     }
 
     @RequestMapping(value = "prodetail", method = RequestMethod.GET)
-    public String getProposal(@RequestParam("p_id") int p_id,Model model) {
+    public String getProposal(@RequestParam("p_id") int p_id,Model model,HttpServletRequest request) {
         // request.setAttribute("comlist", list);
         Proposal proposal = proposalService.getoneproposal(p_id);
         // List<Comment> list = commentService.getAllComment();
         System.out.println(proposal);
+//     List<Comment> comment1 = commentService.getcomment(p_id);
+        // List<Comment> list = commentService.getAllComment();
+        HttpSession session = request.getSession();                     //
+        session.setAttribute("proposal_id",proposal);
+
+
+        model.addAttribute("comment", new Comment());
         model.addAttribute("proposal", proposal);
         return "w_proposal_detail.html";
     }
@@ -99,11 +103,34 @@ public class  ProposalController {
 
 
     @RequestMapping(value = "/enterproposal", method = RequestMethod.GET)
-    public String indexMember(Model model) {
+    public String indexMember(Model model,HttpServletRequest request) {
+        Member member1=(Member)getSession().getAttribute("member_name") ;
+        List<Proposal> proposal1 = proposalService.getproposal(member1.getName());
         model.addAttribute("proposal", new Proposal());
+        request.setAttribute("proposal1", proposal1);
         System.out.println("");
         return "/w_proposal_make.html";
+    }
 
+    @PostMapping(value="/deletemy",params = "checkbox")
+    public String deletemy(@RequestParam("checkbox") int[] index){
+        for(int it:index)
+        {System.out.println("获取了撤销位置："+it);
+            proposalService.deleteproposal(it);}
+        // Proposal proposal=null;
+        return "redirect:/enterproposal";
+    }
+
+    @PostMapping(value="/delete")
+    public String deleteEx(){return "redirect:/getallproposal";}
+
+    @PostMapping(value="/delete",params = "checkbox")
+    public String delete(@RequestParam("checkbox") int[] index){
+        for(int it:index)
+        {System.out.println(it);
+            proposalService.deleteproposal(it);}
+       // Proposal proposal=null;
+        return "redirect:/getallproposal";
     }
 
 }

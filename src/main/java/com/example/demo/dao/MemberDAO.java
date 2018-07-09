@@ -4,6 +4,7 @@ import com.example.demo.entity.Member;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 import java.util.List;
@@ -27,6 +28,9 @@ public interface MemberDAO {
     @Select(value = "SELECT * FROM member")
     List<Member> getAllMember();
 
-
+    @Update(value = "UPDATE member SET member.company = #{company},member.title = #{title},member.position = #{position}," +
+            "member.position = #{position},member.phonenum = #{phonenum},member.email = #{email}," +
+            "member.wechat = #{wechat} WHERE member.name = #{name}")
+    int update(String name,String company,String title,String position,String phonenum,String email,String wechat);
 
 }

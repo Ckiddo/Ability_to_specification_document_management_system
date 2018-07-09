@@ -1,6 +1,10 @@
 package com.example.demo.controller;
+import com.example.demo.dao.ProposalDAO;
 import com.example.demo.entity.Member;
+import com.example.demo.entity.Proposal;
+import com.example.demo.entity.Standard;
 import com.example.demo.service.MemberService;
+import com.example.demo.service.StandardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -37,7 +41,8 @@ public class  MemberController {
 
     @Autowired
     private MemberService memberService;
-
+    @Autowired
+    private StandardService standardService;
 
     @RequestMapping(value = "/insert",method = RequestMethod.GET)
     public String insert(@ModelAttribute("member") Member member,Model model){
@@ -67,7 +72,7 @@ public class  MemberController {
         return "register.html";
 }
 
-    @RequestMapping(value = "/login",method = RequestMethod.GET)
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
     public String getMember(@ModelAttribute("member") Member member,Model model,HttpServletRequest request) {
         System.out.println(memberService.findname(member));
         System.out.println("输入的名字" + member.getName());
@@ -89,8 +94,13 @@ public class  MemberController {
     */
 
     @RequestMapping("/index")
-    public String  index(Model model){
+    public String  index(Model model,HttpServletRequest request){
         System.out.println("nb了");
+        getSession().invalidate();
+        List<Standard> standards = standardService.getallStandard();
+        System.out.println(standards);
+        request.setAttribute("standard", standards);
+
         model.addAttribute("member",new Member());
         return "login_menu.html";
     }
@@ -128,4 +138,23 @@ public class  MemberController {
     }
 
 
+    @RequestMapping("w_func_choose.html")
+    public String  choice(){
+        return "/w_func_choose.html";
+    }
+
+
+    @RequestMapping("/infor_mation")
+    public String  maintain(Model model){
+        Member member=(Member)getSession().getAttribute("member_name") ;
+        Member member1=memberService.findaname(member);
+        model.addAttribute("member1", member1);
+        return "/w_imfo_maintain.html";
+    }
+    @RequestMapping(value = "/infor_update",method = RequestMethod.GET)
+    public String update(@ModelAttribute("member") Member member,Model model) {
+        System.out.println("hei");
+        memberService.update(member);
+        return "w_func_choose.html";
+    }
 }

@@ -17,14 +17,14 @@ public interface StandardDAO {
 
     List<Standard> getAllStandard();
 
-    @Insert(value = "INSERT INTO standard(standard.`id`,standard.`name`,standard.`author`,standard.`editDate`,"+
+    @Insert(value = "INSERT INTO standard(standard.`s_id`,standard.`name`,standard.`editDate`,"+
             "proposal.`standard_content`)\n"+
-            "VALUE(#{p_id},#{name},#{author},#{close_time},#{status},#{content},#{agree_num},#{disagree_num},#{sub_time})")
+            "VALUE(#{s_id},#{name},#{editDate},#{standard_content})")
     int insert(Standard standard);
 
 
-    @Select(value = "select * from standard where name = #{name}")
-    List<Standard> getstandard(String name);
+    @Select(value = "select * from standard where s_id = #{s_id}")
+    Standard getonestandard(int s_id);
 
     @Select(value = "select * from standard")
     List<Standard> getallstandard();
