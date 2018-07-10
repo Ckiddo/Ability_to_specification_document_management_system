@@ -16,4 +16,6 @@ public interface MemberService {
     boolean update(Member member);
 
     Member findaname(Member member);
+    boolean deletemember(String name);
+    boolean updategroup(String name);
 }

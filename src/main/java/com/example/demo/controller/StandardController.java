@@ -21,14 +21,12 @@ public class StandardController {
     @Autowired
     private StandardService standardService;
 
-
     @RequestMapping(value = "getallstandard",method = RequestMethod.GET)
     public String getAllStandard(HttpServletRequest request){
         List<Standard> standard = standardService.getallStandard();
         request.setAttribute("standard",standard);
         return "w_norm_search.html";
     }
-
 
     @RequestMapping(value = "standarddetail", method = RequestMethod.GET)
     public String getOneStandard(@RequestParam("s_id") int s_id,Model model) {

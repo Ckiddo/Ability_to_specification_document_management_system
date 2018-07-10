@@ -4,12 +4,14 @@ import com.example.demo.entity.Comment;
 import com.example.demo.entity.Member;
 import com.example.demo.entity.Proposal;
 import com.example.demo.service.CommentService;
+import com.example.demo.service.ProposalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -36,11 +38,11 @@ public class CommentController {
 
     @Autowired
     private CommentService commentService;
-
+    private ProposalService proposalService;
 
 
     @RequestMapping(value = "cominsert",method = RequestMethod.GET) //
-    public String getAllStudent(@ModelAttribute("comment")Comment comment, Model model, HttpServletRequest request){
+    public String getAllStudent(@ModelAttribute("comment")Comment comment, @RequestParam("vote")int vote, Model model, HttpServletRequest request){
       //  List<Comment> list = commentService.getAllComment();
         Member member=(Member)getSession().getAttribute("member_name") ;
         Proposal proposal=(Proposal)getSession().getAttribute("proposal_id");
@@ -51,6 +53,14 @@ public class CommentController {
         comment.setMember_name(member.getName());
        comment.setP_id(proposal.getP_id());
        // request.setAttribute("",list);
+   System.out.println("外面的：：："+proposal);
+
+   // System.out.println(vote);
+       if(vote==1){
+            proposalService.updateAg(proposal);
+        }else{
+            proposalService.updateDisAg(proposal);
+        }
         List<Comment> comment1 = commentService.getcomment(proposal.getP_id());
         System.out.println(comment1);
         // List<Comment> list = commentService.getAllComment();

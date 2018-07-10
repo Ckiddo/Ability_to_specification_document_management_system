@@ -43,7 +43,9 @@
 <div class="root-container">
 	<header class="big-header">能力规范文稿管理系统</header>
 	<div class="login-control">
-	admin已登录<button class="button">注销</button>
+		<a href="/index" >
+			<button class="button">注销</button>
+		</a>
 	</div>
 	<div class="func-choose-container">
 		<a href="w_func_choose_formanage.html">
@@ -56,34 +58,39 @@
 		<div class="small-container">
 				<header class="small-header">提案列表</header>
 				<!--下面为动态更新内容，提案列表-->
+			<form action="/agreeornot" method="post" >
 				<table>
 					<tr>
 						<th><input type="checkbox" style="float:left;">全选</th>
-						<th >编号</th>
 						<th>姓名</th>
 						<th>申请信息和推荐表</th>
-						
 					</tr>
-					<tr>
-						<td><input type="checkbox">1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
+					<tr th:each="s,iterStat : ${member}" th:class="${iterStat.odd}? 'odd'">
+						<td style="width:4em"><input type="checkbox" name="checkbox"  th:value="${s.name}"></td>
+						<td th:text=" ${s.getName()}"></td>
+						　　<td> <a th:href="@{/memberdetail(name=${s.name})}"th:text=" 查看"></a></td>
 					</tr>
-					<tr>
-						<td><input type="checkbox">1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						
 					</tr>
 				</table>
 				<br/>
-				<button class="button">同意</button>
-				<button class="button">拒绝</button>
+			<button  type="button" class="button" onclick="checkAll()">全选</button>
+			<button type="submit" name="ag"value="agree" class="button" >同意</button>
+			<button class="button"name="ag"value="disagree" type="submit">拒绝</button>
 		</div>
 	</div>
 	</div>
 </div>
+<script type="text/javascript">
+
+    function checkAll() {
+        var one = document.getElementsByName('checkbox');//获取到复选框的名称
+
+        for (var i = 0; i < one.length; i++) {
+            one[i].checked = true;
+        }
+
+    }
+
+</script>
 </body>
 </html>

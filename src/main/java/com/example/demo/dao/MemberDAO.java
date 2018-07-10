@@ -1,10 +1,7 @@
 package com.example.demo.dao;
 
 import com.example.demo.entity.Member;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 import java.util.List;
@@ -22,6 +19,11 @@ public interface MemberDAO {
             "VALUE(#{name},#{password},#{sex},#{birthday},#{homeaddress},#{contactinfor},#{referees},#{industrybranch},#{specialcommittee})")*/
     int insert(Member member);
 
+    @Delete(value = "DELETE FROM `docsmanagesys`.`member` WHERE `name`=#{name}")
+    int delete(String name);
+    @Update(value="UPDATE `docsmanagesys`.`member` SET `usergroup`='1' WHERE `name`=#{name}")
+    int uodategroup(String name);
+
     @Select(value = "select * from member where name = #{name}")
     Member find(String name);
 
@@ -29,8 +31,8 @@ public interface MemberDAO {
     List<Member> getAllMember();
 
     @Update(value = "UPDATE member SET member.company = #{company},member.title = #{title},member.position = #{position}," +
-            "member.position = #{position},member.phonenum = #{phonenum},member.email = #{email}," +
+            "member.phonenum = #{phonenum},member.email = #{email}," +
             "member.wechat = #{wechat} WHERE member.name = #{name}")
-    int update(String name,String company,String title,String position,String phonenum,String email,String wechat);
+    int update(Member member);
 
 }

@@ -72,13 +72,22 @@ public class MemberServiceImpl implements MemberService {
         else
         return member1.getUsergroup();
     }
+    public boolean deletemember(String name){
+        memberDAO.delete(name);
+        return true;
+    }
+
+    public boolean updategroup(String name){
+        memberDAO.uodategroup(name);
+        return true;
+    }
 
     public boolean update(Member member){
         if (null == member){
             return false;
         }
         // do something...
-        if( memberDAO.update(member.getName(),member.getCompany(),member.getTitle(),member.getPosition(),member.getPhonenum(),member.getEmail(),member.getWechat())==0)
+        if( memberDAO.update(member)==0)
         {
             System.out.println("返回0");
         }

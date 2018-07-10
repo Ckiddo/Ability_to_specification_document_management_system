@@ -11,7 +11,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class ProposalServiceImpl implements ProposalService {
+public
+class ProposalServiceImpl implements ProposalService {
 
     @Autowired
     private ProposalDAO proposalDAO;
@@ -53,4 +54,18 @@ public class ProposalServiceImpl implements ProposalService {
         proposalDAO.delete(p_id);
         return true;
     }
+
+
+        @Override
+        public void updateAg(Proposal proposal)
+        {
+            proposalDAO.updateAgreeById(proposal);
+        }
+
+    @Override
+    public void updateDisAg(Proposal proposal)
+    {
+        proposalDAO.updateDisagreeById(proposal);
+    }
+
 }

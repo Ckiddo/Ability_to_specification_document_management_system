@@ -33,11 +33,13 @@
 <div class="root-container">
 	<header class="big-header">能力规范文稿管理系统</header>
 	<div class="login-control">
-	admin已登录<button class="button">注销</button>
+		<a href="/index" >
+			<button class="button">注销</button>
+		</a>
 	</div>
 	<div class="func-choose-container">
 			<a href="w_func_choose.html">
-				<button class="func-choose-button" >写者</button>
+				<button class="func-choose-button" >返回：功能选择</button>
 			</a>
 			<button class="func-choose-button disabled-button" disabled>管理</button>
 	<div class="container">
@@ -46,29 +48,37 @@
 				<!--下面为动态更新内容，账号?-->
 				<form>
 					<table>
+						<tr th:object="${member1}">
+
 						<tr>
-							<th >序号</th><td >2</td><td ><input type="text"></td>
+							<th>公司</th><td th:text="*{member1.company}"></td>
 						</tr>
 						<tr>
-							<th>姓名</th><td>2</td><td><input type="text"></td>
+							<th>职称</th><td th:text="*{member1.title}"></td>
 						</tr>
 						<tr>
-							<th>职称</th><td>2</td><td><input type="text"></td>
+							<th>职务</th><td th:text="*{member1.position}"></td>
 						</tr>
 						<tr>
-							<th>职务</th><td>2</td><td><input type="text"></td>
+							<th>电话</th><td th:text="*{member1.phonenum}"></td>
 						</tr>
 						<tr>
-							<th>电话</th><td>2</td><td><input type="text"></td>
+							<th>邮箱</th><td th:text="*{member1.email}"></td><
 						</tr>
 						<tr>
-							<th>邮箱</th><td>2</td><td><input type="text"></td>
+							<th>微信</th><td th:text="*{member1.wechat}"></td>
 						</tr>
-						<tr>
-							<th>微信</th><td>2</td><td><input type="text"></td>
-						</tr>
-						
+
 					</table>
+			</form>
+					<form id="iform" th:action="@{/infor_update}" th:method="get" th:object="${member}" class="container" align="center">
+						<p class="note">公司&nbsp;</p><input type="text" th:field="*{company}" class="text-input" required><p class="mark">*</p><br>
+						<p class="note">职称&nbsp;</p><input type="text" th:field="*{title}" class="text-input" required><p class="mark">*</p><br>
+						<p class="note">职务&nbsp;</p><input type="text" th:field="*{position}" class="text-input" required><p class="mark">*</p><br>
+						<p class="note">电话&nbsp;</p><input type="text" th:field="*{phonenum}" class="text-input" required><p class="mark">*</p><br>
+						<p class="note">邮箱&nbsp;</p><input type="text" th:field="*{email}" class="text-input" required><p class="mark">*</p><br>
+						<p class="note">微信&nbsp;</p><input type="text" th:field="*{wechat}" class="text-input" required><p class="mark">*</p><br>
+
 					<br/>
 					<button class="button" type="submit" style="margin-left:45%;margin-right:45%">确认修改</button>
 					

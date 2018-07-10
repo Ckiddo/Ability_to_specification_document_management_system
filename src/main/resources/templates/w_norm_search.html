@@ -49,7 +49,7 @@
 	</div>
 	<div class="func-choose-container">
 		<a href="w_func_choose.html">
-			<button class="func-choose-button" >写者</button>
+			<button class="func-choose-button" >返回：功能选择</button>
 		</a>
 		<a href="m_func_choose.html" >
 			<button class="func-choose-button disabled-button" disabled>管理</button>
@@ -82,19 +82,14 @@
 	</div>
 </div>
 <script type="text/javascript">
-    function checkAll() {
-        var all=document.getElementById('checkAll');//获取到点击全选的那个复选框的id
-        var one=document.getElementsByName('checkbox');//获取到复选框的名称
-        if(all.checked==true){//因为获得的是数组，所以要循环 为每一个checked赋值
-            for(var i=0;i<one.length;i++){
-                one[i].checked=true;
-            }
 
-        }else{
-            for(var j=0;j<one.length;j++){
-                one[j].checked=false;
-            }
+    function checkAll() {
+        var one = document.getElementsByName('checkbox');//获取到复选框的名称
+
+        for (var i = 0; i < one.length; i++) {
+            one[i].checked = true;
         }
+
     }
 
 </script>

@@ -65,10 +65,10 @@
 	<div class="container">
 		<div class="small-container">
 				<a href="管理-提案审批-推荐(专委会).html">
-					<button class="func-choose-button-middle" >推荐(专委会)</button>
+					<button class="func-choose-button-middle disabled-button" disabled>推荐(专委会)</button>
 				</a>
 				<a href="管理-提案审批-备案(行业分会).html">
-					<button class="func-choose-button-middle" >备案(行业分会)</button>
+					<button class="func-choose-button-middle disabled-button" disabled>备案(行业分会)</button>
 				</a>
 				<a href="管理-提案审批-立案(研究会).html">
 					<button class="func-choose-button-middle" style="color:red">立案(研究会)</button>
@@ -84,26 +84,16 @@
 						<th >编号</th>
 						<th>提案名称</th>
 						<th>提案人</th>
-						<th>专委会</th>
+					<!--	<th>专委会</th>
 						<th>推荐人</th>
-						
-					</tr>
-					<tr>
-						<td><input type="checkbox">1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox">1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						<td>1</td>
-						<td>2</td>
-						
+-->
+					<tr th:each="s,iterStat : ${proposal}" th:class="${iterStat.odd}? 'odd'">
+						<td style="width:4em"><input type="checkbox" name="checkbox"  th:value="${s.p_id}"></td>
+						<td th:text=" ${s.getP_id()}"></td>
+						　　<td> <a th:href="@{/prodetail(p_id=${s.p_id})}"th:text=" ${s.getName()}"></a></td>
+						　　<td th:text=" ${s.getAuthor()}"></td>
+						　　
+
 					</tr>
 				</table>
 				<br/>
@@ -114,4 +104,16 @@
 	</div>
 </div>
 </body>
+<script type="text/javascript">
+
+    function checkAll() {
+        var one = document.getElementsByName('checkbox');//获取到复选框的名称
+
+        for (var i = 0; i < one.length; i++) {
+            one[i].checked = true;
+        }
+
+    }
+
+</script>
 </html>

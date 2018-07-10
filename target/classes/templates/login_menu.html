@@ -25,7 +25,7 @@
 	<div class="login-container">
 		<form th:action="@{/login}" th:method="post" th:object="${member}"  style="display:inline">
 			用户名<input type="text" th:field="*{name}" required>
-			&nbsp;密码&nbsp;<input type="text" th:field="*{password}" required>
+			&nbsp;密码&nbsp;<input type="password" th:field="*{password}" required>
 			<button type="submit" class="button" >登录</button>
 		</form>
 		<a href="/regist">
