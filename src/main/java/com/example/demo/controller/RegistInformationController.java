@@ -15,11 +15,8 @@ public class RegistInformationController {
     @Autowired
     private StudentService studentService;
 
-<<<<<<< HEAD
-    @RequestMapping(value = "",method = RequestMethod.GET)
-=======
+
     @RequestMapping(value = "getregistinformation",method = RequestMethod.GET)
->>>>>>> wpf2
     public String getAllStudent(HttpServletRequest request){
         List<Student> list = studentService.getAllStudent();
         request.setAttribute("students",list);

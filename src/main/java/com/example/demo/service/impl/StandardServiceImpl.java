@@ -14,11 +14,7 @@ public class StandardServiceImpl implements StandardService {
     private StandardDAO standardDAO;
 
     @Override
-<<<<<<< HEAD
-    public List<Standard> getAllStandard(){
-        return standardDAO.getAllStandard();
-    }
-=======
+
     public List<Standard> getallStandard(){
         return standardDAO.getallstandard();
     }
@@ -47,5 +43,4 @@ public class StandardServiceImpl implements StandardService {
         return standards;
     }
 
->>>>>>> wpf2
 }

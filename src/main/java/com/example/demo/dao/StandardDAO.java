@@ -1,13 +1,10 @@
 package com.example.demo.dao;
 
 
-<<<<<<< HEAD
-import com.example.demo.entity.Standard;
-=======
+
 import com.example.demo.entity.Proposal;
 import com.example.demo.entity.Standard;
 import org.apache.ibatis.annotations.Insert;
->>>>>>> wpf2
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -17,11 +14,7 @@ import java.util.List;
 public interface StandardDAO {
 
 
-<<<<<<< HEAD
-    @Select(value = "SELECT * FROM standards")
 
-    List<Standard> getAllStandard();
-=======
     @Select(value = "SELECT * FROM standard")
 
     List<Standard> getAllStandard();
@@ -38,5 +31,4 @@ public interface StandardDAO {
     @Select(value = "select * from standard")
     List<Standard> getallstandard();
 
->>>>>>> wpf2
 }

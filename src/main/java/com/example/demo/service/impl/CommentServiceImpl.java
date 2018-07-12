@@ -18,8 +18,7 @@ public class CommentServiceImpl implements CommentService {
     public List<Comment> getAllComment(){
         return commentDAO.getAllComment();
     }
-<<<<<<< HEAD
-=======
+
 
     @Override
     public boolean insert(Comment comment) {
@@ -43,5 +42,4 @@ public class CommentServiceImpl implements CommentService {
     public List<Comment> getcomment(int p_id){
         return commentDAO.getcomment(p_id);
     }
->>>>>>> wpf2
 }

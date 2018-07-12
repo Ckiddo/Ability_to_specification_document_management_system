@@ -1,16 +1,5 @@
 package com.example.demo.controller;
-<<<<<<< HEAD
-import com.example.demo.entity.Member;
-import com.example.demo.service.MemberService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.servlet.http.HttpServletRequest;
-=======
 import com.example.demo.dao.ProposalDAO;
 import com.example.demo.entity.Member;
 import com.example.demo.entity.Proposal;
@@ -28,7 +17,6 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
->>>>>>> wpf2
 import java.util.List;
 /**
  * @description
@@ -37,9 +25,7 @@ import java.util.List;
  **/
 @Controller
 
-<<<<<<< HEAD
-public class MemberController {
-=======
+
 public class  MemberController {
 
     public static HttpServletRequest getRequest() {
@@ -55,22 +41,11 @@ public class  MemberController {
         }
         return session;
     }
->>>>>>> wpf2
 
 
     @Autowired
     private MemberService memberService;
-<<<<<<< HEAD
 
-/*
-    @RequestMapping(value = "/注册界面.html",method = RequestMethod.GET)
-    public String insert(@ModelAttribute("member") Member member,Model model){
-        System.out.println("hei");
-        memberService.insert(member);
-        return "redirect:/主界面.html";
-    }
-*/
-=======
     @Autowired
     private StandardService standardService;
     @Autowired
@@ -88,7 +63,6 @@ public class  MemberController {
         }
     }
 
->>>>>>> wpf2
     //更新信息
     /*
     @RequestMapping(value = "/stu/update",method = RequestMethod.GET)
@@ -100,14 +74,7 @@ public class  MemberController {
     */
     //提交到页面
 
-<<<<<<< HEAD
-    @RequestMapping(value = "/注册界面.html",method = RequestMethod.GET)
-    public String indexMember(Model model){
-        model.addAttribute("member",new Member());
-        return "注册界面.html";
-    }
 
-=======
     @RequestMapping(value = "/regist", method = RequestMethod.GET)
     public String indexMember(Model model) {
         model.addAttribute("member", new Member());
@@ -175,7 +142,6 @@ public class  MemberController {
         else
             return "/m_func_choose.html";
     }
->>>>>>> wpf2
     //主页
     /*
     @RequestMapping(value = "/注册界面.html",method = RequestMethod.GET)
@@ -185,14 +151,7 @@ public class  MemberController {
     */
 
     @RequestMapping("/index")
-<<<<<<< HEAD
-    public String  index(){
-        return "主界面.html";
-    }
 
-    @RequestMapping("/登录后界面-信息维护.html")
-    public String  imfoMaintain(){
-=======
     public String index(Model model, HttpServletRequest request) {
         System.out.println("nb了");
         getSession().invalidate();
@@ -206,40 +165,11 @@ public class  MemberController {
 
     @RequestMapping("/登录后界面-信息维护.html")
     public String imfoMaintain() {
->>>>>>> wpf2
         return "登录后界面-信息维护.html";
     }
 
     @RequestMapping("/登录后界面-提案查询-写者.html")
-<<<<<<< HEAD
-    public String  proposalWriter(){
-        return "登录后界面-提案查询-写者.html";
-    }
-
-    @RequestMapping("/登录后界面-提案查询-管理.html")
-    public String  proposalManage(){
-        return "登录后界面-提案查询-管理.html";
-    }
-
-    @RequestMapping("/登录后界面-提案编制.html")
-    public String  proposalMake(){
-        return "登录后界面-提案编制.html";
-    }
-
-    @RequestMapping("/登录后界面-提案详情.html")
-    public String  proposalDetail(){
-        return "登录后界面-提案详情.html";
-    }
-
-    @RequestMapping("/主界面.html")
-    public String  index2(){
-        return "主界面.html";
-    }
-
-
-}
-=======
-    public String proposalWriter() {
+   public String proposalWriter() {
         return "写者-提案查询.html";
     }
 
@@ -390,4 +320,3 @@ public class  MemberController {
 
 
 
->>>>>>> wpf2

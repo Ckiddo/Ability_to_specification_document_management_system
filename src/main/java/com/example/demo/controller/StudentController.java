@@ -16,11 +16,8 @@ import java.util.List;
 * @author Tim Lin
 * @create 2018-07-01 
 **/
-<<<<<<< HEAD
 
-=======
 /*
->>>>>>> wpf2
 @Controller
 public class StudentController {
 
@@ -43,7 +40,7 @@ public class StudentController {
     public String  register(){
         return "注册界面.html";
     }
-<<<<<<< HEAD
+
 
     @RequestMapping("/登录后界面-信息维护.html")
     public String  imfoMaintain(){
@@ -65,29 +62,6 @@ public class StudentController {
         return "登录后界面-提案编制.html";
     }
 
-=======
-
-    @RequestMapping("/登录后界面-信息维护.html")
-    public String  imfoMaintain(){
-        return "登录后界面-信息维护.html";
-    }
-
-    @RequestMapping("/登录后界面-提案查询-写者.html")
-    public String  proposalWriter(){
-        return "登录后界面-提案查询-写者.html";
-    }
-
-    @RequestMapping("/登录后界面-提案查询-管理.html")
-    public String  proposalManage(){
-        return "登录后界面-提案查询-管理.html";
-    }
-
-    @RequestMapping("/登录后界面-提案编制.html")
-    public String  proposalMake(){
-        return "登录后界面-提案编制.html";
-    }
-
->>>>>>> wpf2
     @RequestMapping("/登录后界面-提案详情.html")
     public String  proposalDetail(){
         return "登录后界面-提案详情.html";
@@ -99,8 +73,5 @@ public class StudentController {
     }
 
 }
-<<<<<<< HEAD
-=======
 */
->>>>>>> wpf2
 

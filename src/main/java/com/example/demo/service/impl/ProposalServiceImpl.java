@@ -2,10 +2,8 @@ package com.example.demo.service.impl;
 
 
 import com.example.demo.dao.ProposalDAO;
-<<<<<<< HEAD
-=======
+
 import com.example.demo.entity.Member;
->>>>>>> wpf2
 import com.example.demo.entity.Proposal;
 import com.example.demo.service.ProposalService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,22 +12,14 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-<<<<<<< HEAD
+
 public class ProposalServiceImpl implements ProposalService {
-=======
-public
-class ProposalServiceImpl implements ProposalService {
->>>>>>> wpf2
 
     @Autowired
     private ProposalDAO proposalDAO;
 
     @Override
-<<<<<<< HEAD
-    public Proposal getProposal(){
-        return proposalDAO.getProposal();
-    }
-=======
+
     public  List<Proposal> getallproposal(){
         return proposalDAO.getallproposal();
     }
@@ -98,5 +88,4 @@ class ProposalServiceImpl implements ProposalService {
     }
 
 
->>>>>>> wpf2
 }

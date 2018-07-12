@@ -1,15 +1,7 @@
 package com.example.demo.dao;
 
 import com.example.demo.entity.Member;
-<<<<<<< HEAD
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.springframework.web.bind.annotation.ModelAttribute;
 
-@Mapper
-public interface MemberDAO {
-    /*
-=======
 import org.apache.ibatis.annotations.*;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
@@ -18,19 +10,12 @@ import java.util.List;
 @Mapper
 public interface MemberDAO {
 
->>>>>>> wpf2
     @Insert(value = "INSERT INTO member(member.`name`,member.`password`,member.`sex`,member.`birthday`,"+
             "member.`homeaddress`,member.`contactinfor`,member.`referees`,member.`industrybranch`,"+
             "member.`specialcommittee`)\n" +
             "VALUE(#{name},#{password},#{sex},#{birthday},#{homeaddress},#{contactinfor},#{referees},#{industrybranch},#{specialcommittee})")
 
-<<<<<<< HEAD
-    */
-    @Insert(value = "INSERT INTO member(name,password,sex,birthday,homeaddress,contactinfor,referees,insustrybranch,specialcommittee"+
-            "VALUE(#{name},#{password},#{sex},#{birthday},#{homeaddress},#{contactinfor},#{referees},#{industrybranch},#{specialcommittee})")
-    int insert(Member member);
 
-=======
 
    /* @Insert(value = "INSERT INTO member(name,password,sex,birthday,homeaddress,contactinfor,referees,insustrybranch,specialcommittee"+
             "VALUE(#{name},#{password},#{sex},#{birthday},#{homeaddress},#{contactinfor},#{referees},#{industrybranch},#{specialcommittee})")*/
@@ -55,5 +40,4 @@ public interface MemberDAO {
     @Select(value = "select * from member where referees = #{refname}")
     List<Member> findref(String refname);
 
->>>>>>> wpf2
 }

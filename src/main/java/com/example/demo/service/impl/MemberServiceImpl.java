@@ -6,11 +6,9 @@ import com.example.demo.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-<<<<<<< HEAD
-=======
+
 import java.util.List;
 
->>>>>>> wpf2
 @Service
 public class MemberServiceImpl implements MemberService {
 
@@ -19,15 +17,12 @@ public class MemberServiceImpl implements MemberService {
     private MemberDAO memberDAO;
 
     @Override
-<<<<<<< HEAD
 
-=======
     public List<Member> getAllMember() {
         return memberDAO.getAllMember();
     }
 
     @Override
->>>>>>> wpf2
     public boolean insert(Member member) {
         System.out.println("miao");
 
@@ -45,8 +40,7 @@ public class MemberServiceImpl implements MemberService {
 
         return true;
     }
-<<<<<<< HEAD
-=======
+
 
     @Override
     public int findname(Member member) {
@@ -131,6 +125,5 @@ public class MemberServiceImpl implements MemberService {
         return memberDAO.findref(refname);
     }
 
->>>>>>> wpf2
 }
 

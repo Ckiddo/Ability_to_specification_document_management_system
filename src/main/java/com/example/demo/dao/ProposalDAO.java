@@ -1,14 +1,9 @@
 package com.example.demo.dao;
 
-<<<<<<< HEAD
-import com.example.demo.entity.Proposal;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-=======
+
 import com.example.demo.entity.Member;
 import com.example.demo.entity.Proposal;
 import org.apache.ibatis.annotations.*;
->>>>>>> wpf2
 
 import java.util.List;
 
@@ -17,8 +12,7 @@ public interface ProposalDAO {
 
     @Select(value = "SELECT * FROM proposal where(p_id=)")
     public Proposal getProposal();
-<<<<<<< HEAD
-=======
+
 
     @Insert(value = "INSERT INTO proposal(proposal.`p_id`,proposal.`name`,proposal.`author`,proposal.`close_time`,"+
             "proposal.`status`,proposal.`content`,proposal.`agree_num`,proposal.`disagree_num`,"+
@@ -50,5 +44,4 @@ public interface ProposalDAO {
     @Update(value="update proposal set proposal.status= #{status} where proposal.p_id = #{p_id}")
     public void changestatus(Proposal proposal);
 
->>>>>>> wpf2
 }

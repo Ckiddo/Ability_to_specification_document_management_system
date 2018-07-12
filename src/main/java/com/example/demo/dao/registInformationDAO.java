@@ -4,10 +4,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
-<<<<<<< HEAD
-//写入数据库的不会
-=======
->>>>>>> wpf2
+
 
 @Mapper
 public interface registInformationDAO {
