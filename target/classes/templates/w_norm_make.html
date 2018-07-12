@@ -3,7 +3,11 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+<<<<<<< HEAD:target/classes/templates/登录后界面-提案编制.html
 <title>提案编制</title>
+=======
+<title>写者-规范编制</title>
+>>>>>>> wpf2:target/classes/templates/w_norm_make.html
 </head>
 <style>	
 
@@ -34,21 +38,30 @@
 <div class="root-container">
 	<header class="big-header">能力规范文稿管理系统</header>
 	<div class="login-control">
-	admin已登录<button class="button">注销</button>
+		<a href="/index" >
+			<button class="button">注销</button>
+		</a>
 	</div>
 	<div class="func-choose-container">
+<<<<<<< HEAD:target/classes/templates/登录后界面-提案编制.html
 		<a href="登录后界面-提案查询-管理.html">
 			<button class="func-choose-button" >写者</button>
 		</a>
 			<button class="func-choose-button" >管理</button>
+=======
+		<a href="w_func_choose.html">
+			<button class="func-choose-button" >返回：功能选择</button>
+		</a>
+			<button class="func-choose-button disabled-button" disabled>管理</button>
+>>>>>>> wpf2:target/classes/templates/w_norm_make.html
 	<div class="container">
 		<div class="small-container">
-				<header class="small-header">提案编制</header>
+				<header class="small-header">规范编制</header>
 				<div style="width:50%;margin-left:auto;margin-right:auto">
 					<br>
-					提案名称<input type="text">
+					规范名称<input type="text">
 					<br/>
-					<p>提案内容</p>
+					<p>规范内容</p>
 					<textarea rows="10" cols="60"></textarea>
 					<br/>
 					<input type="radio">我已阅读<p style="color:red;display:inline">提案建议要求</p>
@@ -56,7 +69,7 @@
 					<button class="button">保存</button>
 					<button class="button">提交</button>
 				</div>
-				<header class="small-header">提案列表</header>
+				<header class="small-header">规范编制</header>
 				<!--下面为动态更新内容，提案列表-->
 				<table style="width:50%;margin-left:auto;margin-right:auto">
 					<tr>

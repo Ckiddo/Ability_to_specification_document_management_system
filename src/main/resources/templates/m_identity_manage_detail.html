@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+<title>管理-身份管理详情</title>
+</head>
+<style>	
+
+	.login-control{
+		text-align:right;
+		background-color:rgb(202,228,202);
+		
+	}
+	.func-choose-button{
+		display:inline;
+		width:49.6%;
+		font-size:1.5em;
+		padding:0.2em;
+		background-color:white;
+	}
+
+	.article-container{
+		width:600px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.tiny-container{
+		width:600px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+</style>
+<body>
+<div class="root-container">
+	<header class="big-header">能力规范文稿管理系统</header>
+	<div class="login-control">
+		<a href="/index" >
+			<button class="button">注销</button>
+		</a>
+	</div>
+	<form class="func-choose-container">
+			<a href="getallmember">
+				<button class="func-choose-button" >写者</button>
+			</a>
+			<a href="m_func_choose.html">
+				<button class="func-choose-button">管理</button>
+			</a>
+
+		<div class="small-container">
+				<header class="small-header">入会申请表</header>
+			<a href="/getallmember">
+				<button class="button"style="margin-top:2px;margin-bottom:20px"><-返回</button>
+			</a>
+				<!--下面为动态更新内容，申请人详细信息-->
+			<form action="/agreeornot1" method="post" >
+
+			<table>
+				<tr th:object="${member1}">
+
+				<tr><td>用户名:&nbsp;&nbsp;</td><td><td th:text="*{member1.name}"></td></tr>
+				<tr><td>性别:&nbsp;&nbsp;</td><td><td th:text="*{member1.sex}"></td></tr>
+				<tr><td>出生日期:</td><td><td th:text="*{member1.birthday}"></td></tr>
+				<tr><td>家庭住址:</td><td><td th:text="*{member1.homeaddress}"></td></tr>
+				<tr><td>联系方式:</td><td><td th:text="*{member1.contactinfor}"></td></tr>
+				<tr><td>推荐人:</td><td><td th:text="*{member1.referees}"></td></tr>
+				<tr><td>申请内容:</td></td></tr>
+
+
+			</table>
+				<div class="article-container">
+				申请<br>
+				请求同意<br>
+				</div>
+				<br/>
+				
+				<header class="small-header">会员推荐表</header>
+				<table>
+
+					<tr><td>推荐人</td><td>admin01</td></tr>
+					<tr><td>单位</td><td><td th:text="*{member1.company}"></td></tr>
+					<tr><td>电话</td><td><td th:text="*{member1.phonenum}"></td></tr>
+					<tr><td>被推荐人</td><td><td th:text="*{member1.name}"></td></tr>
+					<tr><td>职称</td><td><td th:text="*{member1.title}"></td></tr>
+					<tr><td>职务</td><td><td th:text="*{member1.position}"></td></tr>
+					<tr><td>邮箱</td><td><td th:text="*{member1.email}"></td></tr>
+					<tr><td>推荐原因</td></tr>
+
+				</table>
+				<div class="article-container">
+				表现优异<br>
+				推荐入会<br>
+				</div>
+				<br/>
+				<div class="button-container">
+
+				<input hidden =true name="checkbox"th:value="${member1.name}" />
+					<button type="submit" name="ag"value="agree" class="button" >同意</button>
+					<button class="button"name="ag"value="disagree" type="submit">拒绝</button>
+				</div>
+				</form>
+		</div>
+	</form>
+	</div>
+	</div>
+</div>
+</body>
+</html>

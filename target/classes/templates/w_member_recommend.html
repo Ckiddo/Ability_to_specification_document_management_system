@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+	<title>写者-会员推荐</title>
+</head>
+<style>
+
+	.login-control{
+		text-align:right;
+		background-color:rgb(202,228,202);
+
+	}
+	.func-choose-button{
+		display:inline;
+		width:49.6%;
+		font-size:1.5em;
+		padding:0.2em;
+		background-color:white;
+	}
+
+	th,td {
+		border:1px solid black;
+		width:100%;
+		min-width:5em;
+	}
+	table {
+		border:1px solid black;
+	}
+</style>
+<body>
+<div class="root-container">
+	<header class="big-header">能力规范文稿管理系统</header>
+	<div class="login-control">
+		<a href="/index" >
+			<button class="button">注销</button>
+		</a>
+	</div>
+	<div class="func-choose-container">
+		<a href="w_func_choose.html">
+			<button class="func-choose-button" >返回：功能选择</button>
+		</a>
+		<button class="func-choose-button disabled-button" disabled>管理</button>
+		<div class="container">
+			<div class="small-container">
+				<header class="small-header">推荐</header>
+				<!--下面为动态更新内容，账号?-->
+				<form>
+					<table>
+						<tr th:object="${member1}">
+
+						<tr>
+							<th>被推荐人名</th><td th:text="*{member1.name}"></td>
+						</tr>
+						<tr>
+							<th>性别</th><td th:text="*{member1.sex}"></td>
+						</tr>
+						<tr>
+							<th>生日</th><td th:text="*{member1.birthday}"></td>
+						</tr>
+						<tr>
+							<th>家庭住址</th><td th:text="*{member1.homeaddress}"></td>
+						</tr>
+						<tr>
+							<th>联系方式</th><td th:text="*{member1.contactinfor}"></td><
+						</tr>
+						<tr>
+							<th>行业分会</th><td th:text="*{member1.industrybranch}"></td>
+						</tr>
+
+					</table>
+				</form>
+				<form id="iform" th:action="@{/infor_update1}" th:method="get" th:object="${member}" class="container" align="center">
+					<p class="note">公司&nbsp;</p><input type="text" th:field="*{company}" class="text-input" required><p class="mark">*</p><br>
+					<p class="note">职称&nbsp;</p><input type="text" th:field="*{title}" class="text-input" required><p class="mark">*</p><br>
+					<p class="note">职务&nbsp;</p><input type="text" th:field="*{position}" class="text-input" required><p class="mark">*</p><br>
+					<p class="note">电话&nbsp;</p><input type="text" th:field="*{phonenum}" class="text-input" required><p class="mark">*</p><br>
+					<p class="note">邮箱&nbsp;</p><input type="text" th:field="*{email}" class="text-input" required><p class="mark">*</p><br>
+					<p class="note">微信&nbsp;</p><input type="text" th:field="*{wechat}" class="text-input" required><p class="mark">*</p><br>
+					<p>提案内容</p>
+					<textarea rows="10" cols="60"th:field="*{ref_content}"></textarea>
+					<br/>
+					<button class="button" type="submit" style="margin-left:45%;margin-right:45%">确认修改</button>
+
+				</form>
+				<br/>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

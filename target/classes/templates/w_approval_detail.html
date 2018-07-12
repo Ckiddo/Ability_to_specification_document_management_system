@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+	<title>写者-提案详情</title>
+</head>
+<style>
+
+	.login-control{
+		text-align:right;
+		background-color:rgb(202,228,202);
+
+	}
+	.func-choose-button{
+		display:inline;
+		width:49.6%;
+		font-size:1.5em;
+		padding:0.2em;
+		background-color:white;
+	}
+
+	.article-container{
+		width:600px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	.tiny-container{
+		width:600px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+</style>
+<body>
+<div class="root-container">
+	<header class="big-header">能力规范文稿管理系统</header>
+	<div class="login-control">
+		<a href="/index" >
+			<button class="button">注销</button>
+		</a>
+	</div>
+	<div class="func-choose-container">
+		<a href="w_func_choose.html">
+			<button class="func-choose-button" >返回：功能选择</button>
+		</a>
+		<button class="func-choose-button disabled-button" disabled></button>
+		<div class="container">
+			<div class="small-container">
+				<header class="small-header">提案详情</header>
+				<a href="/enterapproval">
+					<button class="button"style="margin-top:2px;margin-bottom:20px"><-返回</button>
+				</a>
+				<!--下面为动态更新内容，提案详情-->
+
+				<br/>
+				<table>
+					<tr th:object="${proposal}">
+					<tr>
+						<td>提案id:&nbsp;&nbsp;</td><td th:text="*{proposal.p_id}">&nbsp;&nbsp;&nbsp;</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提案名称:&nbsp;&nbsp;&nbsp;</td><td th:text="*{proposal.name}">&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td>提案作者:&nbsp;&nbsp;</td><td th:text="*{proposal.author}">&nbsp;&nbsp;</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截止日期:&nbsp;&nbsp;&nbsp;</td><td th:text="*{proposal.close_time}">&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td>提案内容:&nbsp;</td>
+					</tr>
+				</table>
+				<div class="article-container">
+					<td th:text="*{proposal.content}">
+				</div>
+				<br/>
+				<div class="tiny-container">
+
+
+
+
+					</form>
+				</div>
+
+				<br/>
+				<div class="tiny-container">
+					<p>评论区</p>
+					<table style="border:10x solid black">
+						<tr>
+							<th>评论人&nbsp;&nbsp;&nbsp;</th>
+							<th>评论内容&nbsp;&nbsp;&nbsp;</th>
+							<th>时间&nbsp;&nbsp;&nbsp;</th>
+						<tr th:each="s,iterStat : ${comment1}" th:class="${iterStat.odd}? 'odd'">
+
+							<td th:text=" ${s.member_name}"&nbsp;&nbsp;&nbsp;></td>
+							　　 <td th:text=" ${s.comment_detail}"&nbsp;&nbsp;&nbsp;></td>
+							　　<td th:text=" ${s.com_time}"&nbsp;&nbsp;&nbsp;></td>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

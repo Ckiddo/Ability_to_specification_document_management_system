@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../static/css/styles.css"/>
+<title>主界面</title>
+</head>
+<style>	
+	
+	.login-container{
+		margin-top:20px;
+		margin-bottom:20px;
+		width:800px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	.article {
+		line-height:200%;
+	}
+</style>
+<body>
+<div class="root-container">
+	<header class="big-header">能力规范文稿管理系统</header>
+	<div class="login-container">
+		<form th:action="@{/login}" th:method="post" th:object="${member}"  style="display:inline">
+			用户名<input type="text" th:field="*{name}" required>
+			&nbsp;密码&nbsp;<input type="password" th:field="*{password}" required>
+			<button type="submit" class="button" >登录</button>
+		</form>
+		<a href="/regist">
+		<button class="button" >注册</button>
+		</a>
+	</div>
+
+	<div class="container show-container ">
+		<div class="small-container article-container">
+			<!--动态内容区域，展示天文章标题和日期-->
+
+			<tr th:each="s,iterStat : ${standard}" th:class="${iterStat.odd}? 'odd'">
+
+				　<td> <a th:href="@{/stddetail(s_id=${s.s_id})}"th:text=" ${s.name}"></a></td>
+				　　<td th:text=" ${s.getEditDate()}"></td>
+				<br>
+		</div>
+
+		<p th:if="${std}" th:text="${std}"></p>
+
+		</form>
+	</div>
+</div>
+</body>
+</html>
