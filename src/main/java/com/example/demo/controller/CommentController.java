@@ -38,6 +38,7 @@ public class CommentController {
 
     @Autowired
     private CommentService commentService;
+    @Autowired
     private ProposalService proposalService;
 
 
@@ -55,19 +56,22 @@ public class CommentController {
        // request.setAttribute("",list);
    System.out.println("外面的：：："+proposal);
 
-   // System.out.println(vote);
-       if(vote==1){
+   ///System.out.println(vote);
+     if(vote==1){
+
             proposalService.updateAg(proposal);
         }else{
             proposalService.updateDisAg(proposal);
         }
-        List<Comment> comment1 = commentService.getcomment(proposal.getP_id());
-        System.out.println(comment1);
-        // List<Comment> list = commentService.getAllComment();
-        request.setAttribute("comment1", comment1);
+
         commentService.insert(comment);
 
+        List<Comment> comment1 = commentService.getcomment(proposal.getP_id());
+        //     System.out.println(comment1);
+
+        request.setAttribute("comment1", comment1);
         model.addAttribute("proposal", proposal);
+       // return "redirect:/prodetail";
         return "w_proposal_detail.html";
     }
 

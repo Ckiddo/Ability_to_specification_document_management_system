@@ -60,7 +60,7 @@ public class MemberServiceImpl implements MemberService {
         }
     }
 
-
+    @Override
     public int getusergroup(Member member)
     {
         Member member1 = memberDAO.find(member.getName());
@@ -72,16 +72,17 @@ public class MemberServiceImpl implements MemberService {
         else
         return member1.getUsergroup();
     }
+    @Override
     public boolean deletemember(String name){
         memberDAO.delete(name);
         return true;
     }
-
+    @Override
     public boolean updategroup(String name){
         memberDAO.uodategroup(name);
         return true;
     }
-
+    @Override
     public boolean update(Member member){
         if (null == member){
             return false;
@@ -97,6 +98,7 @@ public class MemberServiceImpl implements MemberService {
 
         return true;
     }
+    @Override
     public Member findaname(Member member) {
         System.out.println("miao");
         Member member1 = memberDAO.find(member.getName());
@@ -112,6 +114,12 @@ public class MemberServiceImpl implements MemberService {
         else{
             return member1;
         }
+    }
+
+
+    @Override
+    public List<Member> findref(String refname){
+        return memberDAO.findref(refname);
     }
 
 }

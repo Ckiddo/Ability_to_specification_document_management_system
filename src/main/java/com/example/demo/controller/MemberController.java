@@ -15,6 +15,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.List;
 /**
  * @description
@@ -81,14 +82,14 @@ public class  MemberController {
         System.out.println(memberService.findname(member));
         System.out.println("输入的名字" + member.getName());
         System.out.println("数据库的名字" + member.getPassword());
-        if (memberService.findname(member) == 1 && memberService.getusergroup(member) == 1)/////增加审核后改为1
+        if (memberService.findname(member) == 1 && memberService.getusergroup(member) == 1&&member.getIndustrybranch() == "写者分会")/////增加审核后改为1
         {
             HttpSession session = request.getSession();                     //
             session.setAttribute("member_name", member);            //
             return "w_func_choose.html";
         }
 
-        if (memberService.findname(member) == 1 && memberService.getusergroup(member) > 1)//管理员
+        if (memberService.findname(member) == 1 && memberService.getusergroup(member) ==1&&member.getIndustrybranch()!="写者分会" )//管理员
         {
             System.out.println("管理员登陆");
             HttpSession session = request.getSession();                     //
@@ -103,7 +104,8 @@ public class  MemberController {
         Member member = (Member) getSession().getAttribute("member_name");
         System.out.println(member);
         Member member1 = memberService.findaname(member);
-        if (member1.getUsergroup() == 1)
+        String judge=member1.getIndustrybranch();
+        if (member1.getUsergroup()==1&&member1.equals("写者分会"))
             return "/w_func_choose.html";
         else
             return "/m_func_choose.html";
@@ -113,16 +115,26 @@ public class  MemberController {
     public String choice3(HttpServletRequest request) {
         Member member = (Member) getSession().getAttribute("member_name");
         System.out.println(member);
-        List<Proposal> proposal = proposalService.getallproposal();
-        // List<Comment> list = commentService.getAllComment();
-        request.setAttribute("proposal", proposal);
-        Member member1 = memberService.findaname(member);
-        if (member1.getUsergroup() == 2)
+
+                Member member1 = memberService.findaname(member);
+                String  Industrybranch=member1.getIndustrybranch();
+        if (Industrybranch.equals("专委会")){
+            List<Proposal> proposal = proposalService.getlevelpro("已提交");
+            request.setAttribute("proposal", proposal);
             return "/m_proposal_approval_recommend.html";
-        else if (member1.getUsergroup() == 3)
+        }
+        else if (Industrybranch.equals("行业分会"))
+        {
+            List<Proposal> proposal = proposalService.getlevelpro("已推荐");
+            request.setAttribute("proposal", proposal);
             return "/m_proposal_approval_backup.html";
-        else if (member1.getUsergroup() == 4)
+        }
+        else if (Industrybranch.equals("研究会"))
+        {
+            List<Proposal> proposal = proposalService.getlevelpro("已备案");
+            request.setAttribute("proposal", proposal);
             return "/m_proposal_approval_ensure.html";
+        }
         else
             return "/m_func_choose.html";
     }
@@ -200,6 +212,22 @@ public class  MemberController {
         return "/w_imfo_maintain.html";
     }
 
+
+    @RequestMapping(value = "/infor_mation1",method = RequestMethod.GET)
+    public String mation1(@RequestParam("name") String name, Model model) {
+        // request.setAttribute("comlist", list);
+        Member member=new Member();
+        member.setName(name);
+        System.out.println(member);
+        Member member1 = memberService.findaname(member);
+        // List<Comment> list = commentService.getAllComment();
+        model.addAttribute("member", new Member());
+        System.out.println(member1);
+        model.addAttribute("member1", member1);
+        return "/w_member_recommend.html";
+    }
+
+
     @RequestMapping(value = "/infor_update", method = RequestMethod.GET)
     public String update(@ModelAttribute("member") Member member, Model model) {
         System.out.println("hei");
@@ -210,15 +238,27 @@ public class  MemberController {
 
         memberService.update(member);
         System.out.println("hei");
-        return "w_func_choose.html";
+        return "redirect:/w_func_choose.html";
+    }
+
+
+    @RequestMapping(value = "/infor_update1", method = RequestMethod.GET)
+    public String update1(@ModelAttribute("member") Member member, Model model) {
+        System.out.println("hei");
+      
+        System.out.println(member);
+
+        memberService.update(member);
+        System.out.println("hei");
+        return "w_ref_search.html";
     }
 
     @PostMapping(value = "/agreeornot", params = "checkbox")
-    public String delete(@RequestParam("checkbox") String[] index, @RequestParam("ag") String agree) {
+    public String agreemember1(@RequestParam("checkbox") String[] index, @RequestParam("ag") String agree) {
         System.out.println(agree);
         if (agree.equals("disagree")) {
             for (String it : index) {
-                System.out.println(it);
+                System.out.println("选中了：：：：："+it);
                 memberService.deletemember(it);
             }
         }
@@ -232,6 +272,45 @@ public class  MemberController {
         }
         return "redirect:/getallmember";
     }
+
+
+    @PostMapping(value = "/agreeornot1", params = "checkbox")
+    public String agreemember2(@RequestParam("checkbox") String index, @RequestParam("ag") String agree) {
+        System.out.println("1同意吗？"+agree);
+        if (agree.equals("disagree")) {
+
+                memberService.deletemember(index);
+
+        }
+        else
+        {
+                System.out.println("同意这个人：：："+index);
+                memberService.updategroup(index);
+        }
+        return "redirect:/getallmember";
+    }
+
+
+    @RequestMapping(value = "/getreflist",method = RequestMethod.GET)
+    public String getreflist(HttpServletRequest request){
+        Member memberJ = (Member) getSession().getAttribute("member_name");
+        List<Member> member1 = memberService.findref(memberJ.getName());
+        System.out.println("mem1==="+member1);
+        List<Member> member=new ArrayList();
+        for(Member s:member1){
+            if(s.getUsergroup()==0){
+                member.add(s);
+            }
+        }
+        System.out.println(member);
+        request.setAttribute("member",member);
+        return "w_ref_search.html";
+    }
+
+
+
+
+
 }
 
 

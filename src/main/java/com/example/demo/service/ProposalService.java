@@ -11,7 +11,8 @@ public interface ProposalService {
     List<Proposal> getproposal(String author);
     Proposal getoneproposal(int p_id);
     boolean deleteproposal(int p_id);
-
+    List<Proposal> getlevelpro(String status);
     void updateAg(Proposal proposal);
     void updateDisAg(Proposal proposal);
+    void changestatus(int it,String status);
 }

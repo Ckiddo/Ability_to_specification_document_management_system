@@ -78,6 +78,7 @@
 				<header class="small-header">提案审批</header>
 				
 				<!--下面为动态更新内容，提案列表-->
+			<form action="/ensure" method="post" >
 				<table>
 					<tr>
 						<th><input type="checkbox" style="float:left;">全选</th>
@@ -90,15 +91,16 @@
 					<tr th:each="s,iterStat : ${proposal}" th:class="${iterStat.odd}? 'odd'">
 						<td style="width:4em"><input type="checkbox" name="checkbox"  th:value="${s.p_id}"></td>
 						<td th:text=" ${s.getP_id()}"></td>
-						　　<td> <a th:href="@{/prodetail(p_id=${s.p_id})}"th:text=" ${s.getName()}"></a></td>
+						　　<td> <a th:href="@{/approvaldetail(p_id=${s.p_id})}"th:text=" ${s.getName()}"></a></td>
 						　　<td th:text=" ${s.getAuthor()}"></td>
 						　　
 
 					</tr>
 				</table>
 				<br/>
-				
-				
+			<button  type="button" class="button" onclick="checkAll()">全选</button>
+			<button class="button" type="submit">立案</button>
+			</form>
 		</div>
 	</div>
 	</div>

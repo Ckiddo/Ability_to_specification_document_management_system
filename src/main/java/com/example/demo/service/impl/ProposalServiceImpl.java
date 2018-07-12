@@ -21,7 +21,7 @@ class ProposalServiceImpl implements ProposalService {
     public  List<Proposal> getallproposal(){
         return proposalDAO.getallproposal();
     }
-
+    @Override
     public Proposal getoneproposal(int p_id){
         return proposalDAO.getoneproposal(p_id);
     }
@@ -50,6 +50,12 @@ class ProposalServiceImpl implements ProposalService {
     }
 
     @Override
+    public List<Proposal> getlevelpro(String status) {
+        List<Proposal> proposal1=proposalDAO.getlevelpro(status);
+        return proposal1;
+    }
+
+    @Override
     public boolean deleteproposal(int p_id){
         proposalDAO.delete(p_id);
         return true;
@@ -59,6 +65,7 @@ class ProposalServiceImpl implements ProposalService {
         @Override
         public void updateAg(Proposal proposal)
         {
+            System.out.println("内部的"+proposal);
             proposalDAO.updateAgreeById(proposal);
         }
 
@@ -67,5 +74,16 @@ class ProposalServiceImpl implements ProposalService {
     {
         proposalDAO.updateDisagreeById(proposal);
     }
+
+    @Override
+    public void changestatus(int it,String status)
+    {
+        Proposal proposal=new Proposal();
+        proposal.setP_id(it);
+        proposal.setStatus(status);
+        System.out.println("传进来的推荐it是"+it+"status是：：：：："+status);
+        proposalDAO.changestatus(proposal);
+    }
+
 
 }

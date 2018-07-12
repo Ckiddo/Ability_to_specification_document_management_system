@@ -1,16 +1,16 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
-<title>写者-提案详情</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+	<title>写者-提案详情</title>
 </head>
-<style>	
+<style>
 
 	.login-control{
 		text-align:right;
 		background-color:rgb(202,228,202);
-		
+
 	}
 	.func-choose-button{
 		display:inline;
@@ -25,7 +25,7 @@
 		margin-left:auto;
 		margin-right:auto;
 	}
-	
+
 	.tiny-container{
 		width:600px;
 		margin-left:auto;
@@ -41,32 +41,32 @@
 		</a>
 	</div>
 	<div class="func-choose-container">
-			<a href="w_func_choose.html">
-				<button class="func-choose-button" >返回：功能选择</button>
-			</a>
-			<button class="func-choose-button disabled-button" disabled>管理</button>
-	<div class="container">
-		<div class="small-container">
+		<a href="w_func_choose.html">
+			<button class="func-choose-button" >返回：功能选择</button>
+		</a>
+		<button class="func-choose-button disabled-button" disabled></button>
+		<div class="container">
+			<div class="small-container">
 				<header class="small-header">提案详情</header>
-			<a href="/getallproposal">
-			<button class="button"style="margin-top:2px;margin-bottom:20px"><-返回</button>
-			</a>
+				<a href="/enterapproval">
+					<button class="button"style="margin-top:2px;margin-bottom:20px"><-返回</button>
+				</a>
 				<!--下面为动态更新内容，提案详情-->
 
 				<br/>
 				<table>
 					<tr th:object="${proposal}">
-				<tr>
-					<td>提案id:&nbsp;&nbsp;</td><td th:text="*{proposal.p_id}">&nbsp;&nbsp;&nbsp;</td>
-					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提案名称:&nbsp;&nbsp;&nbsp;</td><td th:text="*{proposal.name}">&nbsp;&nbsp;&nbsp;</td>
-				</tr>
-				<tr>
-					<td>提案作者:&nbsp;&nbsp;</td><td th:text="*{proposal.author}">&nbsp;&nbsp;</td>
-					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截止日期:&nbsp;&nbsp;&nbsp;</td><td th:text="*{proposal.close_time}">&nbsp;&nbsp;&nbsp;</td>
-				</tr>
-				<tr>
-					<td>提案内容:&nbsp;</td>
-				</tr>
+					<tr>
+						<td>提案id:&nbsp;&nbsp;</td><td th:text="*{proposal.p_id}">&nbsp;&nbsp;&nbsp;</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提案名称:&nbsp;&nbsp;&nbsp;</td><td th:text="*{proposal.name}">&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td>提案作者:&nbsp;&nbsp;</td><td th:text="*{proposal.author}">&nbsp;&nbsp;</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截止日期:&nbsp;&nbsp;&nbsp;</td><td th:text="*{proposal.close_time}">&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td>提案内容:&nbsp;</td>
+					</tr>
 				</table>
 				<div class="article-container">
 					<td th:text="*{proposal.content}">
@@ -74,12 +74,10 @@
 				<br/>
 				<div class="tiny-container">
 
-						<form th:action="@{/cominsert}" th:method="get" th:object="${comment}"  style="display:inline">
-						<input type="text"th:field="*{comment_detail}">
-							<input type="radio" name="vote"  id="agree" value="1" checked>附议
-							<input type="radio" name="vote" id="disagree" value="0"checked>反对
-							<button  class="button" type="submit" id="summit" >提交</button>
-						</form>
+
+
+
+					</form>
 				</div>
 
 				<br/>
@@ -89,7 +87,7 @@
 						<tr>
 							<th>评论人&nbsp;&nbsp;&nbsp;</th>
 							<th>评论内容&nbsp;&nbsp;&nbsp;</th>
-							<th>时间&nbsp;&nbsp;</th>
+							<th>时间&nbsp;&nbsp;&nbsp;</th>
 						<tr th:each="s,iterStat : ${comment1}" th:class="${iterStat.odd}? 'odd'">
 
 							<td th:text=" ${s.member_name}"&nbsp;&nbsp;&nbsp;></td>
@@ -99,8 +97,8 @@
 						</tr>
 					</table>
 				</div>
+			</div>
 		</div>
-	</div>
 	</div>
 </div>
 </body>

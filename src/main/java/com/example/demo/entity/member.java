@@ -23,6 +23,9 @@ public class Member {
     private  String email;
     private  String wechat;
 
+    private  String ref_content;
+    private  String refed;
+
     public void setUsergroup(Integer setnum){
         usergroup=setnum;
     };

@@ -30,11 +30,16 @@ public interface ProposalDAO {
     @Delete(value = "DELETE FROM `docsmanagesys`.`proposal` WHERE `p_id`=#{p_id}")
    int delete(int p_id);
 
-    @Update(value="update proposal set proposal.agree_num=proposal.agree_num+1 where member.p_id = #{p_id}")
+    @Update(value="update proposal set proposal.agree_num=proposal.agree_num+1 where proposal.p_id = #{p_id}")
     public void updateAgreeById(Proposal proposal);
 
-
+    @Select(value = "select * from proposal where status = #{status}")
+    List<Proposal> getlevelpro(String status);
 
     @Update(value="update proposal set proposal.disagree_num=proposal.disagree_num+1 where proposal.p_id = #{p_id}")
     public void updateDisagreeById(Proposal proposal);
+
+    @Update(value="update proposal set proposal.status= #{status} where proposal.p_id = #{p_id}")
+    public void changestatus(Proposal proposal);
+
 }

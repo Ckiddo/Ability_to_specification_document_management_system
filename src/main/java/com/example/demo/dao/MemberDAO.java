@@ -32,7 +32,10 @@ public interface MemberDAO {
 
     @Update(value = "UPDATE member SET member.company = #{company},member.title = #{title},member.position = #{position}," +
             "member.phonenum = #{phonenum},member.email = #{email}," +
-            "member.wechat = #{wechat} WHERE member.name = #{name}")
+            "member.wechat = #{wechat},member.ref_content = #{ref_content},member.refed = #{refed} WHERE member.name = #{name}")
     int update(Member member);
+
+    @Select(value = "select * from member where referees = #{refname}")
+    List<Member> findref(String refname);
 
 }

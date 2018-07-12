@@ -37,15 +37,18 @@ public class  ProposalController {
 
     @Autowired
     private ProposalService proposalService;
+    @Autowired
     private CommentService commentService;
 
     // Member member= MemberService.
 
     @RequestMapping(value = "getallproposal", method = RequestMethod.GET)
-    public String getallProposal(HttpServletRequest request) {
+    public String getallProposal(HttpServletRequest request,Model model) {
         List<Proposal> proposal = proposalService.getallproposal();
        // List<Comment> list = commentService.getAllComment();
+
         request.setAttribute("proposal", proposal);
+
        // request.setAttribute("comlist", list);
 
         return "w_proposal_search.html";
@@ -68,11 +71,42 @@ public class  ProposalController {
         HttpSession session = request.getSession();                     //
         session.setAttribute("proposal_id",proposal);
 
+        List<Comment> comment1 = commentService.getcomment(p_id);
+        System.out.println(comment1);
+
+        request.setAttribute("comment1", comment1);
+
 
         model.addAttribute("comment", new Comment());
         model.addAttribute("proposal", proposal);
         return "w_proposal_detail.html";
     }
+
+
+
+    @RequestMapping(value = "approvaldetail", method = RequestMethod.GET)
+    public String getappProposal(@RequestParam("p_id") int p_id,Model model,HttpServletRequest request) {
+        // request.setAttribute("comlist", list);
+        Proposal proposal = proposalService.getoneproposal(p_id);
+        // List<Comment> list = commentService.getAllComment();
+        System.out.println(proposal);
+//     List<Comment> comment1 = commentService.getcomment(p_id);
+        // List<Comment> list = commentService.getAllComment();
+        HttpSession session = request.getSession();                     //
+        session.setAttribute("proposal_id",proposal);
+
+        List<Comment> comment1 = commentService.getcomment(p_id);
+        System.out.println(comment1);
+
+        request.setAttribute("comment1", comment1);
+
+
+        model.addAttribute("comment", new Comment());
+        model.addAttribute("proposal", proposal);
+        return "w_approval_detail.html";
+    }
+
+
 
     @RequestMapping(value = "/proinsert",method = RequestMethod.GET)
     public String insert(@ModelAttribute("proposal") Proposal proposal, Model model,HttpServletRequest request){
@@ -105,9 +139,11 @@ public class  ProposalController {
     @RequestMapping(value = "/enterproposal", method = RequestMethod.GET)
     public String indexMember(Model model,HttpServletRequest request) {
         Member member1=(Member)getSession().getAttribute("member_name") ;
+
         List<Proposal> proposal1 = proposalService.getproposal(member1.getName());
         model.addAttribute("proposal", new Proposal());
         request.setAttribute("proposal1", proposal1);
+
         System.out.println("");
         return "/w_proposal_make.html";
     }
@@ -132,6 +168,33 @@ public class  ProposalController {
        // Proposal proposal=null;
         return "redirect:/getallproposal";
     }
+
+
+    @PostMapping(value="/recommend",params = "checkbox")
+    public String recommend(@RequestParam("checkbox") int[] index){
+        for(int it:index)
+        {System.out.println(it);
+            proposalService.changestatus(it,"已推荐");
+        }
+        return "redirect:/enterapproval";
+    }
+
+    @PostMapping(value="/backup",params = "checkbox")
+    public String backup(@RequestParam("checkbox") int[] index){
+        for(int it:index)
+        {System.out.println(it);
+            proposalService.changestatus(it,"已备案");}
+        return "redirect:/enterapproval";
+    }
+
+    @PostMapping(value="/ensure",params = "checkbox")
+    public String ensure(@RequestParam("checkbox") int[] index){
+        for(int it:index)
+        {System.out.println(it);
+            proposalService.changestatus(it,"已立案");}
+        return "redirect:/enterapproval";
+    }
+
 
 }
 

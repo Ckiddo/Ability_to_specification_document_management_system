@@ -18,4 +18,6 @@ public interface MemberService {
     Member findaname(Member member);
     boolean deletemember(String name);
     boolean updategroup(String name);
+
+    List<Member> findref(String refname);
 }
