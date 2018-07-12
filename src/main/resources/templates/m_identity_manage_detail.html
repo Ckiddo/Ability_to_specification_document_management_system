@@ -40,7 +40,7 @@
 			<button class="button">注销</button>
 		</a>
 	</div>
-	<form class="func-choose-container">
+	<div class="func-choose-container">
 			<a href="getallmember">
 				<button class="func-choose-button" >写者</button>
 			</a>
@@ -54,7 +54,7 @@
 				<button class="button"style="margin-top:2px;margin-bottom:20px"><-返回</button>
 			</a>
 				<!--下面为动态更新内容，申请人详细信息-->
-			<form action="/agreeornot1" method="post" >
+
 
 			<table>
 				<tr th:object="${member1}">
@@ -78,7 +78,7 @@
 				<header class="small-header">会员推荐表</header>
 				<table>
 
-					<tr><td>推荐人</td><td>admin01</td></tr>
+					<tr><td>推荐人</td><td><td th:text="*{member1.refed}"></td></tr>
 					<tr><td>单位</td><td><td th:text="*{member1.company}"></td></tr>
 					<tr><td>电话</td><td><td th:text="*{member1.phonenum}"></td></tr>
 					<tr><td>被推荐人</td><td><td th:text="*{member1.name}"></td></tr>
@@ -89,19 +89,18 @@
 
 				</table>
 				<div class="article-container">
-				表现优异<br>
-				推荐入会<br>
+					<td th:text="*{member1.ref_content}">
 				</div>
 				<br/>
 				<div class="button-container">
-
+					<form action="/agreeornot1" method="post" >
 				<input hidden =true name="checkbox"th:value="${member1.name}" />
 					<button type="submit" name="ag"value="agree" class="button" >同意</button>
 					<button class="button"name="ag"value="disagree" type="submit">拒绝</button>
+					</form>
 				</div>
-				</form>
 		</div>
-	</form>
+
 	</div>
 	</div>
 </div>

@@ -72,6 +72,7 @@
 					</table>
 				</form>
 				<form id="iform" th:action="@{/infor_update1}" th:method="get" th:object="${member}" class="container" align="center">
+							<input hidden = true th:value = "${member1.name}" name = "name">
 					<p class="note">公司&nbsp;</p><input type="text" th:field="*{company}" class="text-input" required><p class="mark">*</p><br>
 					<p class="note">职称&nbsp;</p><input type="text" th:field="*{title}" class="text-input" required><p class="mark">*</p><br>
 					<p class="note">职务&nbsp;</p><input type="text" th:field="*{position}" class="text-input" required><p class="mark">*</p><br>

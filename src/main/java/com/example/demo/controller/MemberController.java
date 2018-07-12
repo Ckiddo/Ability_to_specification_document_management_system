@@ -232,7 +232,7 @@ public class  MemberController {
     public String update(@ModelAttribute("member") Member member, Model model) {
         System.out.println("hei");
         Member member1 = (Member) getSession().getAttribute("member_name");
-
+        member.setRefed(member1.getName());
         member.setName(member1.getName());
         System.out.println(member);
 
@@ -243,14 +243,14 @@ public class  MemberController {
 
 
     @RequestMapping(value = "/infor_update1", method = RequestMethod.GET)
-    public String update1(@ModelAttribute("member") Member member, Model model) {
+    public String update1(@ModelAttribute("member") Member member,@RequestParam("name")String name, Model model) {
         System.out.println("hei");
-      
-        System.out.println(member);
+        member.setName(name);
+        System.out.println("要插入得系：：：==="+member);
 
         memberService.update(member);
         System.out.println("hei");
-        return "w_ref_search.html";
+        return "redirect:/getreflist";
     }
 
     @PostMapping(value = "/agreeornot", params = "checkbox")
