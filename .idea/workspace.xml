@@ -2,101 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca290fc0-f364-4564-82a6-d17c7ee6eeb5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/spring-boot-logging.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/spring-boot-logging.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/SampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/SampleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/InformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/InformationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ProposalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ProposalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/RegistInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/RegistInformationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/StandardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/StandardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/CommentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/CommentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/InformationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/InformationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/ProposalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/ProposalDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/StandardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/StandardDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/registInformationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dao/registInformationDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Proposal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Proposal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Standard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Standard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/ProposalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/ProposalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/StandardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/StandardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/InformationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/InformationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/ProposalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/ProposalServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/StandardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/StandardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/afterLogin_showStandard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login_menu_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login_menu_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_func_choose.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_func_choose.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_identity_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_identity_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_identity_manage_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_identity_manage_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_proposal_approval_backup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_proposal_approval_backup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_proposal_approval_ensure.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_proposal_approval_ensure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_proposal_approval_recommend.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_proposal_approval_recommend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/student" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/student" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/w_approval_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/w_approval_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/w_func_choose.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/w_func_choose.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/w_func_choose_formanage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/w_func_choose_formanage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/w_imfo_maintain.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/w_imfo_maintain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/w_member_recommend.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/w_member_recommend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/w_norm_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/w_norm_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/w_norm_make.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/w_norm_make.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/w_norm_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/w_norm_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/w_proposal_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/w_proposal_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/w_proposal_make.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/w_proposal_make.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/w_proposal_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/w_proposal_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/w_ref_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/w_ref_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/主界面.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/注册界面.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-信息维护.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案查询-写者.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案查询-管理.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/登录后界面-提案详情.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/SampleApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/SampleApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/StandardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/StandardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/Proposal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/Proposal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entity/Standard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entity/Standard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/afterLogin_showStandard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login_menu_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login_menu_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/m_func_choose.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/m_func_choose.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/m_identity_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/m_identity_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/m_identity_manage_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/m_identity_manage_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/m_proposal_approval_backup.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/m_proposal_approval_backup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/m_proposal_approval_ensure.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/m_proposal_approval_ensure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/m_proposal_approval_recommend.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/m_proposal_approval_recommend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/student" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/student" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/w_approval_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/w_approval_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/w_func_choose.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/w_func_choose.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/w_func_choose_formanage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/w_func_choose_formanage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/w_imfo_maintain.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/w_imfo_maintain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/w_member_recommend.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/w_member_recommend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/w_norm_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/w_norm_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/w_norm_make.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/w_norm_make.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/w_norm_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/w_norm_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/w_proposal_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/w_proposal_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/w_proposal_make.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/w_proposal_make.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/w_proposal_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/w_proposal_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/w_ref_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/w_ref_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/主界面.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/注册界面.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/登录后界面-信息维护.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/登录后界面-提案查询-写者.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/登录后界面-提案查询-管理.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/登录后界面-提案详情.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/SampleApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/SampleApplicationTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -115,14 +24,8 @@
       <file leaf-file-name="CommentServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/CommentServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="120">
               <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-              <folding>
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1437#1438#0" expanded="true" />
-                <element signature="e#1487#1488#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -135,18 +38,25 @@
               <folding>
                 <element signature="e#689#690#0" expanded="true" />
                 <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#1669#1670#0" expanded="true" />
-                <element signature="e#1764#1765#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InformationServiceImplTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InformationServiceImplTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/service/impl/InformationServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SampleApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/SampleApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -245,9 +155,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,67 +192,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ability_to_specification_document_management_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ability_to_specification_document_management_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ability_to_specification_document_management_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ability_to_specification_document_management_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ability_to_specification_document_management_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ability_to_specification_document_management_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ability_to_specification_document_management_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ability_to_specification_document_management_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ability_to_specification_document_management_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ability_to_specification_document_management_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ability_to_specification_document_management_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ability_to_specification_document_management_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ability_to_specification_document_management_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ability_to_specification_document_management_system" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ability_to_specification_document_management_system" type="b2602c69:ProjectViewProjectNode" />
@@ -390,6 +236,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -595,9 +444,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommentServiceImplTest - 2018.07.13 at 08h 44m 26s.xml">
-      <configuration name="CommentServiceImplTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CommentServiceImplTest - 2018.07.13 at 08h 44m 44s.xml">
       <configuration name="CommentServiceImplTest" configurationId="JUnit" />
     </history-entry>
@@ -625,6 +471,9 @@
     <history-entry file="InformationServiceImplTest - 2018.07.13 at 09h 28m 10s.xml">
       <configuration name="InformationServiceImplTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="InformationServiceImplTest - 2018.08.08 at 09h 19m 45s.xml">
+      <configuration name="InformationServiceImplTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="23" width="1230" height="777" extended-state="0" />
@@ -638,8 +487,8 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.51707315" side_tool="true" weight="0.32859176" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49186993" weight="0.32859176" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49186993" visible="true" weight="0.32859176" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -648,8 +497,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -821,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/SampleApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/entity/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -881,9 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -973,14 +812,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/CommentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="120">
           <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1487#1488#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -991,8 +824,6 @@
           <folding>
             <element signature="e#689#690#0" expanded="true" />
             <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#1669#1670#0" expanded="true" />
-            <element signature="e#1764#1765#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1010,7 +841,14 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/service/impl/InformationServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/SampleApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>

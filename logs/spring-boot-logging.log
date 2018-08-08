@@ -317,3 +317,8 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
 
+2018-08-08 09:26:13.278  INFO 12674 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@670002: startup date [Wed Aug 08 09:20:01 CST 2018]; root of context hierarchy
+2018-08-08 09:26:13.283  INFO 12674 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-08 09:26:13.285  INFO 12674 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-08 09:26:13.290  INFO 12674 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-08 09:26:13.306  INFO 12674 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
