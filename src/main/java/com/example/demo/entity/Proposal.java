@@ -8,7 +8,7 @@ import lombok.Data;
 @Data
 public class Proposal {
 
-    private int p_ID;
+    private int p_id;
     private String name;
     private String author;
     private String close_time;
@@ -18,5 +18,8 @@ public class Proposal {
     private int disagree_num;
     private String sub_time;
     //private List<Comment> commontList;
+    public void setsubtime(String subtime){
+        sub_time=subtime;
+    };
 
 }
