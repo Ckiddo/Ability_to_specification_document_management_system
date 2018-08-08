@@ -14,11 +14,9 @@ public class InformationServiceImpl implements InformationService {
     @Autowired
     private InformationDAO informationDAO;
 
-
     @Override
     public List<Information> getAllInformation(){
         return informationDAO.getAllInformation();
     }
-
 
 }

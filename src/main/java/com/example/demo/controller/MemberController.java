@@ -105,7 +105,7 @@ public class  MemberController {
         System.out.println(member);
         Member member1 = memberService.findaname(member);
         String judge=member1.getIndustrybranch();
-        if (member1.getUsergroup()==1&&judge.equals("写者分会"))
+        if (member1.getUsergroup()==1&&member1.equals("写者分会"))
             return "/w_func_choose.html";
         else
             return "/m_func_choose.html";

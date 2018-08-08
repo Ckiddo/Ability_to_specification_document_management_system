@@ -322,3 +322,140 @@ java.lang.NullPointerException: null
 2018-08-08 09:26:13.285  INFO 12674 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
 2018-08-08 09:26:13.290  INFO 12674 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2018-08-08 09:26:13.306  INFO 12674 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-08 10:01:22.290  INFO 18315 --- [main] com.example.demo.SampleApplication       : Starting SampleApplication on chenkangdeMacBook.local with PID 18315 (/Users/chenkang/Documents/GitHub/Ability_to_specification_document_management_system/target/classes started by chenkang in /Users/chenkang/Documents/GitHub/Ability_to_specification_document_management_system)
+2018-08-08 10:01:22.297  INFO 18315 --- [main] com.example.demo.SampleApplication       : No active profile set, falling back to default profiles: default
+2018-08-08 10:01:22.483  INFO 18315 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@670002: startup date [Wed Aug 08 10:01:22 CST 2018]; root of context hierarchy
+2018-08-08 10:01:25.474  INFO 18315 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-08 10:01:25.529  INFO 18315 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-08 10:01:25.529  INFO 18315 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-08 10:01:25.551  INFO 18315 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/chenkang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-08-08 10:01:25.728  INFO 18315 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-08 10:01:25.729  INFO 18315 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3246 ms
+2018-08-08 10:01:25.973  INFO 18315 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-08 10:01:25.984  INFO 18315 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-08 10:01:25.985  INFO 18315 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-08 10:01:25.985  INFO 18315 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-08 10:01:25.986  INFO 18315 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-08 10:01:26.605  INFO 18315 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-08 10:01:27.105  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@670002: startup date [Wed Aug 08 10:01:22 CST 2018]; root of context hierarchy
+2018-08-08 10:01:27.439  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cominsert],methods=[GET]}" onto public java.lang.String com.example.demo.controller.CommentController.getAllStudent(com.example.demo.entity.Comment,int,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.441  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getinformation],methods=[GET]}" onto public java.lang.String com.example.demo.controller.InformationController.getAllInformation(javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.442  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getallmember],methods=[GET]}" onto public java.lang.String com.example.demo.controller.InformationController.getAllStandard(javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.443  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/memberdetail],methods=[GET]}" onto public java.lang.String com.example.demo.controller.InformationController.getonemember(java.lang.String,org.springframework.ui.Model)
+2018-08-08 10:01:27.455  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.example.demo.controller.MemberController.index(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.455  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/infor_update],methods=[GET]}" onto public java.lang.String com.example.demo.controller.MemberController.update(com.example.demo.entity.Member,org.springframework.ui.Model)
+2018-08-08 10:01:27.456  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insert],methods=[GET]}" onto public java.lang.String com.example.demo.controller.MemberController.insert(com.example.demo.entity.Member,org.springframework.ui.Model)
+2018-08-08 10:01:27.457  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/w_func_choose.html],methods=[GET]}" onto public java.lang.String com.example.demo.controller.MemberController.choice()
+2018-08-08 10:01:27.457  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/w_func_choose_formanage.html]}" onto public java.lang.String com.example.demo.controller.MemberController.choice1()
+2018-08-08 10:01:27.458  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enterapproval],methods=[GET]}" onto public java.lang.String com.example.demo.controller.MemberController.choice3(javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.458  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/infor_mation]}" onto public java.lang.String com.example.demo.controller.MemberController.maintain(org.springframework.ui.Model)
+2018-08-08 10:01:27.459  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/m_func_choose.html]}" onto public java.lang.String com.example.demo.controller.MemberController.choice2()
+2018-08-08 10:01:27.459  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/regist],methods=[GET]}" onto public java.lang.String com.example.demo.controller.MemberController.indexMember(org.springframework.ui.Model)
+2018-08-08 10:01:27.460  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/登录后界面-信息维护.html]}" onto public java.lang.String com.example.demo.controller.MemberController.imfoMaintain()
+2018-08-08 10:01:27.460  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/登录后界面-提案查询-写者.html]}" onto public java.lang.String com.example.demo.controller.MemberController.proposalWriter()
+2018-08-08 10:01:27.461  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/登录后界面-提案编制.html]}" onto public java.lang.String com.example.demo.controller.MemberController.proposalMake()
+2018-08-08 10:01:27.461  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/登录后界面-提案详情.html]}" onto public java.lang.String com.example.demo.controller.MemberController.proposalDetail()
+2018-08-08 10:01:27.462  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/infor_mation1],methods=[GET]}" onto public java.lang.String com.example.demo.controller.MemberController.mation1(java.lang.String,org.springframework.ui.Model)
+2018-08-08 10:01:27.462  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/infor_update1],methods=[GET]}" onto public java.lang.String com.example.demo.controller.MemberController.update1(com.example.demo.entity.Member,java.lang.String,org.springframework.ui.Model)
+2018-08-08 10:01:27.463  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/agreeornot],methods=[POST],params=[checkbox]}" onto public java.lang.String com.example.demo.controller.MemberController.agreemember1(java.lang.String[],java.lang.String)
+2018-08-08 10:01:27.464  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/agreeornot1],methods=[POST],params=[checkbox]}" onto public java.lang.String com.example.demo.controller.MemberController.agreemember2(java.lang.String,java.lang.String)
+2018-08-08 10:01:27.465  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getreflist],methods=[GET]}" onto public java.lang.String com.example.demo.controller.MemberController.getreflist(javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.466  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.example.demo.controller.MemberController.getMember(com.example.demo.entity.Member,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.466  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login_menu]}" onto public java.lang.String com.example.demo.controller.MemberController.index2(org.springframework.ui.Model)
+2018-08-08 10:01:27.470  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[POST],params=[checkbox]}" onto public java.lang.String com.example.demo.controller.ProposalController.delete(int[])
+2018-08-08 10:01:27.471  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/proinsert],methods=[GET]}" onto public java.lang.String com.example.demo.controller.ProposalController.insert(com.example.demo.entity.Proposal,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.472  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getallproposal],methods=[GET]}" onto public java.lang.String com.example.demo.controller.ProposalController.getallProposal(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2018-08-08 10:01:27.472  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deletemy],methods=[POST],params=[checkbox]}" onto public java.lang.String com.example.demo.controller.ProposalController.deletemy(int[])
+2018-08-08 10:01:27.473  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enterproposal],methods=[GET]}" onto public java.lang.String com.example.demo.controller.ProposalController.indexMember(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.473  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[POST]}" onto public java.lang.String com.example.demo.controller.ProposalController.deleteEx()
+2018-08-08 10:01:27.474  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/prodetail],methods=[GET]}" onto public java.lang.String com.example.demo.controller.ProposalController.getProposal(int,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.474  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getproposal],methods=[GET]}" onto public java.lang.String com.example.demo.controller.ProposalController.getProposal(javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.476  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/approvaldetail],methods=[GET]}" onto public java.lang.String com.example.demo.controller.ProposalController.getappProposal(int,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.477  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/recommend],methods=[POST],params=[checkbox]}" onto public java.lang.String com.example.demo.controller.ProposalController.recommend(int[])
+2018-08-08 10:01:27.477  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/backup],methods=[POST],params=[checkbox]}" onto public java.lang.String com.example.demo.controller.ProposalController.backup(int[])
+2018-08-08 10:01:27.478  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ensure],methods=[POST],params=[checkbox]}" onto public java.lang.String com.example.demo.controller.ProposalController.ensure(int[])
+2018-08-08 10:01:27.478  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getregistinformation],methods=[GET]}" onto public java.lang.String com.example.demo.controller.RegistInformationController.getAllStudent(javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.479  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getallstandard],methods=[GET]}" onto public java.lang.String com.example.demo.controller.StandardController.getAllStandard(javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.480  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stddetail],methods=[GET]}" onto public java.lang.String com.example.demo.controller.StandardController.getProposal(int,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.480  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/standarddetail],methods=[GET]}" onto public java.lang.String com.example.demo.controller.StandardController.getOneStandard(int,org.springframework.ui.Model)
+2018-08-08 10:01:27.481  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getstandard],methods=[GET]}" onto public java.lang.String com.example.demo.controller.StandardController.getStandard(javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.485  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-08 10:01:27.487  INFO 18315 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-08 10:01:27.533  INFO 18315 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-08 10:01:27.533  INFO 18315 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-08 10:01:27.670  WARN 18315 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-08 10:01:28.103  INFO 18315 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-08 10:01:28.105  INFO 18315 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-08 10:01:28.113  INFO 18315 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-08 10:01:28.204  INFO 18315 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-08 10:01:28.217  INFO 18315 --- [main] com.example.demo.SampleApplication       : Started SampleApplication in 7.207 seconds (JVM running for 8.695)
+2018-08-08 10:01:36.429  INFO 18315 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-08 10:01:36.430  INFO 18315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-08 10:01:36.457  INFO 18315 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-08-08 10:01:40.054 ERROR 18315 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.example.demo.service.impl.MemberServiceImpl.findaname(MemberServiceImpl.java:104) ~[classes/:na]
+	at com.example.demo.controller.MemberController.choice3(MemberController.java:119) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2018-08-08 10:01:44.715  INFO 18315 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-08 10:01:44.954  INFO 18315 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-08 10:02:13.509  INFO 18315 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@670002: startup date [Wed Aug 08 10:01:22 CST 2018]; root of context hierarchy
+2018-08-08 10:02:13.514  INFO 18315 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-08 10:02:13.516  INFO 18315 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-08 10:02:13.520  INFO 18315 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-08 10:02:13.532  INFO 18315 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

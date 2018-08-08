@@ -3,8 +3,6 @@ package com.example.demo.service.impl;
 import com.example.demo.dao.CommentDAO;
 import com.example.demo.entity.Comment;
 import com.example.demo.service.CommentService;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Select;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,12 +14,10 @@ public class CommentServiceImpl implements CommentService {
     @Autowired
     private CommentDAO commentDAO;
 
-
     @Override
     public List<Comment> getAllComment(){
         return commentDAO.getAllComment();
     }
-
 
     @Override
     public boolean insert(Comment comment) {
@@ -41,10 +37,8 @@ public class CommentServiceImpl implements CommentService {
     }
 
 
-
     @Override
     public List<Comment> getcomment(int p_id){
         return commentDAO.getcomment(p_id);
     }
-
 }
