@@ -1,7 +1,6 @@
 package com.example.demo.dao;
 
 
-
 import com.example.demo.entity.Proposal;
 import com.example.demo.entity.Standard;
 import org.apache.ibatis.annotations.Insert;
@@ -12,7 +11,6 @@ import java.util.List;
 
 @Mapper
 public interface StandardDAO {
-
 
 
     @Select(value = "SELECT * FROM standard")

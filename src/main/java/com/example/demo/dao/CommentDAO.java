@@ -1,7 +1,6 @@
 package com.example.demo.dao;
 
 import com.example.demo.entity.Comment;
-
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -10,7 +9,6 @@ import java.util.List;
 
 @Mapper
 public interface CommentDAO {
-
 
     @Insert(value = "INSERT INTO comment(comment.`member_name`,comment.`p_id`,comment.`comment_detail`,"+
             "comment.`com_time`,comment.`agree`)\n"+

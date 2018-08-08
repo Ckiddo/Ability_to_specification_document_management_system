@@ -15,7 +15,6 @@ public class RegistInformationController {
     @Autowired
     private StudentService studentService;
 
-
     @RequestMapping(value = "getregistinformation",method = RequestMethod.GET)
     public String getAllStudent(HttpServletRequest request){
         List<Student> list = studentService.getAllStudent();

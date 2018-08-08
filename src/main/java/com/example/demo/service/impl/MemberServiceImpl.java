@@ -6,7 +6,6 @@ import com.example.demo.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
 import java.util.List;
 
 @Service
@@ -17,7 +16,6 @@ public class MemberServiceImpl implements MemberService {
     private MemberDAO memberDAO;
 
     @Override
-
     public List<Member> getAllMember() {
         return memberDAO.getAllMember();
     }
@@ -40,7 +38,6 @@ public class MemberServiceImpl implements MemberService {
 
         return true;
     }
-
 
     @Override
     public int findname(Member member) {

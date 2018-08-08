@@ -1,5 +1,4 @@
 package com.example.demo.controller;
-
 import com.example.demo.dao.ProposalDAO;
 import com.example.demo.entity.Member;
 import com.example.demo.entity.Proposal;
@@ -25,7 +24,6 @@ import java.util.List;
  **/
 @Controller
 
-
 public class  MemberController {
 
     public static HttpServletRequest getRequest() {
@@ -45,7 +43,6 @@ public class  MemberController {
 
     @Autowired
     private MemberService memberService;
-
     @Autowired
     private StandardService standardService;
     @Autowired
@@ -73,7 +70,6 @@ public class  MemberController {
     }
     */
     //提交到页面
-
 
     @RequestMapping(value = "/regist", method = RequestMethod.GET)
     public String indexMember(Model model) {
@@ -109,7 +105,7 @@ public class  MemberController {
         System.out.println(member);
         Member member1 = memberService.findaname(member);
         String judge=member1.getIndustrybranch();
-        if (member1.getUsergroup()==1&&member1.equals("写者分会"))
+        if (member1.getUsergroup()==1&&judge.equals("写者分会"))
             return "/w_func_choose.html";
         else
             return "/m_func_choose.html";
@@ -151,7 +147,6 @@ public class  MemberController {
     */
 
     @RequestMapping("/index")
-
     public String index(Model model, HttpServletRequest request) {
         System.out.println("nb了");
         getSession().invalidate();
@@ -169,7 +164,7 @@ public class  MemberController {
     }
 
     @RequestMapping("/登录后界面-提案查询-写者.html")
-   public String proposalWriter() {
+    public String proposalWriter() {
         return "写者-提案查询.html";
     }
 
@@ -237,7 +232,7 @@ public class  MemberController {
     public String update(@ModelAttribute("member") Member member, Model model) {
         System.out.println("hei");
         Member member1 = (Member) getSession().getAttribute("member_name");
-
+        member.setRefed(member1.getName());
         member.setName(member1.getName());
         System.out.println(member);
 
@@ -248,14 +243,14 @@ public class  MemberController {
 
 
     @RequestMapping(value = "/infor_update1", method = RequestMethod.GET)
-    public String update1(@ModelAttribute("member") Member member, Model model) {
+    public String update1(@ModelAttribute("member") Member member,@RequestParam("name")String name, Model model) {
         System.out.println("hei");
-      
-        System.out.println(member);
+        member.setName(name);
+        System.out.println("要插入得系：：：==="+member);
 
         memberService.update(member);
         System.out.println("hei");
-        return "w_ref_search.html";
+        return "redirect:/getreflist";
     }
 
     @PostMapping(value = "/agreeornot", params = "checkbox")

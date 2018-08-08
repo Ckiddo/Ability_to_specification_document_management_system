@@ -2,7 +2,6 @@ package com.example.demo.service.impl;
 
 
 import com.example.demo.dao.ProposalDAO;
-
 import com.example.demo.entity.Member;
 import com.example.demo.entity.Proposal;
 import com.example.demo.service.ProposalService;
@@ -12,14 +11,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-
-public class ProposalServiceImpl implements ProposalService {
+public
+class ProposalServiceImpl implements ProposalService {
 
     @Autowired
     private ProposalDAO proposalDAO;
 
     @Override
-
     public  List<Proposal> getallproposal(){
         return proposalDAO.getallproposal();
     }

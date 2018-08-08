@@ -60,11 +60,23 @@
 				<!--下面为动态更新内容，提案列表-->
 				<form action="/infor_mation1" method="post" >
 					<table>
-						<tr>
-							<th><input type="checkbox" style="float:left;">全选</th>
-							<th>姓名</th>
-							<th>待推荐</th>
-						</tr>
+                        <tr>
+
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>家庭住址</th>
+                            <th>行业分会</th>
+                            <th>待推荐</th>
+                        </tr>
+                        <tr th:each="s,iterStat : ${member}" th:class="${iterStat.odd}? 'odd'">
+                            <td th:text=" ${s.getName()}"></td>
+                            <td th:text=" ${s.sex}"></td>
+                            <td th:text=" ${s.homeaddress}"></td>
+                            <td th:text=" ${s. industrybranch}"></td>
+
+                            <td> <a th:href="@{/infor_mation1(name=${s.name})}"th:text="填写推荐"></a ></td>
+                        </tr>
+                        </tr>
 						<tr th:each="s,iterStat : ${member}" th:class="${iterStat.odd}? 'odd'">
 							<td style="width:4em"><input type="checkbox" name="checkbox"  th:value="${s.name}"></td>
 							<td th:text=" ${s.getName()}"></td>

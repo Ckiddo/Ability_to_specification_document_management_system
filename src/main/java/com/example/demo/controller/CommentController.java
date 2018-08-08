@@ -1,8 +1,6 @@
 package com.example.demo.controller;
 
 import com.example.demo.entity.Comment;
-
-
 import com.example.demo.entity.Member;
 import com.example.demo.entity.Proposal;
 import com.example.demo.service.CommentService;
@@ -21,12 +19,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import java.util.List;
 
 @Controller
 public class CommentController {
-
 
     public static HttpServletRequest getRequest(){
         ServletRequestAttributes attrs=(ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
@@ -53,7 +49,6 @@ public class CommentController {
         Proposal proposal=(Proposal)getSession().getAttribute("proposal_id");
         Date date =new Date();
         System.out.println("pPPPPPPPPPPPPPPPPPP IIIIIIDDDDDDDDDDD:"+proposal.getP_id());
-
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
        comment.setCom_time(df.format(new Date()));// new Date()为获取当前系统时间
         comment.setMember_name(member.getName());
@@ -78,7 +73,6 @@ public class CommentController {
         model.addAttribute("proposal", proposal);
        // return "redirect:/prodetail";
         return "w_proposal_detail.html";
-
     }
 
 }

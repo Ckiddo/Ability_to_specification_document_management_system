@@ -14,7 +14,6 @@ public class StandardServiceImpl implements StandardService {
     private StandardDAO standardDAO;
 
     @Override
-
     public List<Standard> getallStandard(){
         return standardDAO.getallstandard();
     }

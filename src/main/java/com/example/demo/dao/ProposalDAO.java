@@ -1,6 +1,5 @@
 package com.example.demo.dao;
 
-
 import com.example.demo.entity.Member;
 import com.example.demo.entity.Proposal;
 import org.apache.ibatis.annotations.*;
@@ -12,7 +11,6 @@ public interface ProposalDAO {
 
     @Select(value = "SELECT * FROM proposal where(p_id=)")
     public Proposal getProposal();
-
 
     @Insert(value = "INSERT INTO proposal(proposal.`p_id`,proposal.`name`,proposal.`author`,proposal.`close_time`,"+
             "proposal.`status`,proposal.`content`,proposal.`agree_num`,proposal.`disagree_num`,"+

@@ -1,7 +1,6 @@
 package com.example.demo.dao;
 
 import com.example.demo.entity.Member;
-
 import org.apache.ibatis.annotations.*;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
@@ -14,7 +13,6 @@ public interface MemberDAO {
             "member.`homeaddress`,member.`contactinfor`,member.`referees`,member.`industrybranch`,"+
             "member.`specialcommittee`)\n" +
             "VALUE(#{name},#{password},#{sex},#{birthday},#{homeaddress},#{contactinfor},#{referees},#{industrybranch},#{specialcommittee})")
-
 
 
    /* @Insert(value = "INSERT INTO member(name,password,sex,birthday,homeaddress,contactinfor,referees,insustrybranch,specialcommittee"+

@@ -1,7 +1,6 @@
 package com.example.demo.controller;
 
 import com.example.demo.entity.Information;
-
 import com.example.demo.entity.Member;
 import com.example.demo.service.InformationService;
 import com.example.demo.service.MemberService;
@@ -15,27 +14,23 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
-
 import java.util.List;
 
 @Controller
 public class InformationController {
 
     @Autowired
-
     private MemberService memberService;
 
     @Autowired
     private InformationService informationService;
 
     @RequestMapping(value = "/getinformation",method = RequestMethod.GET)
-
     public String getAllInformation(HttpServletRequest request){
         List<Information> list = informationService.getAllInformation();
         request.setAttribute("",list);
         return "";
     }
-
 
 
 
@@ -66,4 +61,3 @@ public class InformationController {
         return "m_identity_manage_detail.html";
     }
 }
-

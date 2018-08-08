@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-
 import com.example.demo.entity.Member;
 import com.example.demo.entity.Proposal;
 import com.example.demo.entity.Standard;
@@ -21,7 +20,6 @@ public class StandardController {
 
     @Autowired
     private StandardService standardService;
-
 
     @RequestMapping(value = "getallstandard",method = RequestMethod.GET)
     public String getAllStandard(HttpServletRequest request){

@@ -16,7 +16,6 @@ import java.util.List;
 * @author Tim Lin
 * @create 2018-07-01 
 **/
-
 /*
 @Controller
 public class StudentController {
@@ -28,7 +27,6 @@ public class StudentController {
     public String getAllStudent(HttpServletRequest request){
         List<Student> list = studentService.getAllStudent();
         request.setAttribute("students",list);
-        // aaaaaa
         return "student";
     }
     @RequestMapping("/index")
@@ -40,7 +38,6 @@ public class StudentController {
     public String  register(){
         return "注册界面.html";
     }
-
 
     @RequestMapping("/登录后界面-信息维护.html")
     public String  imfoMaintain(){

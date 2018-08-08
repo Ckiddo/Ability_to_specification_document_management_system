@@ -1,5 +1,4 @@
 package com.example.demo.controller;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import com.example.demo.entity.Comment;
@@ -198,6 +197,5 @@ public class  ProposalController {
 
 
 }
-
 
 
